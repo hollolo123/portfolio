@@ -57,5 +57,5 @@
 </script>
 
 <style lang="scss">
-  @use '@/styles/layout/Project' as *;
+  @use '@/styles/layout/project' as *;
 </style>
