@@ -16,14 +16,36 @@ header {
         a {
           display: inline-block;
           line-height: 6rem;
-          padding: 0 1rem;
+          padding: 0 .5rem;
           font-weight: 700;
-          font-size: 2.8rem;
+          font-size: 2.4rem;
         }
       }
       .gnb {
+        .gnb__btn {
+          display: block;
+          span {
+            display: block;
+            width: 2.5rem;
+            height: 2px;
+            background-color: #000;
+            margin-bottom: .5rem;
+          }
+          &.active {
+            display: block;
+            span {
+              &:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+              }
+              &:nth-child(2) {
+                transform: rotate(-45deg) translate(5px, -5px);
+              }
+            }
+          }
+        }
         > ul {
-          display: flex;
+          display: none;
+          // display: flex;
           li {
             a {
               display: inline-block;

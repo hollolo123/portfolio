@@ -1,8 +1,8 @@
 <template>
-  <div id="container" class="main__light">
+  <section>
     <div class="contents">
       <div class="inner">
-        <div class="main__slogan">
+        <div class="main__slogan ">
           <h2>FRONT-END</h2>
           <h3>Developer & UI designer</h3>
           <p class="text">
@@ -14,10 +14,9 @@
             보다 완성도 높은 서비스를 만들어 가겠습니다. 
           </p>
         </div>
-
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

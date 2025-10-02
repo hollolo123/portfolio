@@ -1,0 +1,145 @@
+/* My Experience*/
+.exp__wrapper {
+  margin: 4rem 0;
+  > h3 {
+    width: 100%;
+    display: block;
+    margin: 2rem 0;
+    text-align: left;
+  } 
+  .exp__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .exp__box {
+    width:100%;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 5rem;
+    box-sizing: border-box;
+    .tit, .tit2, .tit3 {
+      position: relative;
+      display: inline-block;
+      font-size: 2.6rem;
+      font-weight: 600;
+      color: #fff;
+      height: 5rem;
+      z-index: 0;
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 1.6rem;
+        width: 100%;
+        height: 0.8rem;
+        background: #4169e1;
+        z-index: -1;
+      }
+    
+    }
+    .tit2 {
+      &::after {
+        background: #FB41A1;
+      }
+    }
+    .tit3 {
+      &::after {
+        background: #F35512;
+      }
+    }
+    .skill {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin: 2rem;
+      height: 5rem;
+      opacity: .9;
+    }
+    .icon {
+      margin: 3rem 0;
+      >span {
+        margin: 0.5rem;
+        img {
+          width: 2.8rem;
+          height: 2.8rem;
+        }
+      }
+    }
+    .date {
+      font-size: 1.4rem;
+      opacity: 0.5;
+    }
+    .txt {
+      margin-top: 2rem;
+      padding: 0 2rem;
+      opacity: 0.8;
+      font-size: 1.4rem;
+      font-weight: normal;
+      > ul {
+        > li {
+        position: relative;
+        text-align: left;
+        padding-left: 0.8rem;
+        line-height: 1.6;
+          &::after {
+            display: block;
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 2px;
+            height: 2px;
+            background: #fff;
+          }
+        }
+      } 
+    }
+
+    .company {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin: 0.3rem 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .exp__wrapper {
+    .exp__wrap {
+      flex-direction:row;
+      .exp__box {
+        width: 50%;
+        padding: 5rem 2rem;
+        .skill {
+          margin: 2rem 0;
+        }
+        .txt {
+          //padding: 0 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .exp__wrapper {
+    .exp__wrap {
+      .exp__box {
+        width: 33.33%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .exp__wrapper {
+    .exp__wrap {
+      .exp__box {
+        padding: 5rem;
+      }
+      .skill {
+        margin: 2rem 5rem;
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 <template>
-  <div id="container" class="main__light">
+  <section>
     <div class="contents">
       <div class="inner">
         <h3>Project</h3>
@@ -49,5 +49,13 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
+
+<script>
+
+</script>
+
+<style lang="scss">
+  @use '@/styles/layout/Project' as *;
+</style>

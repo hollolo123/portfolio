@@ -1,26 +1,21 @@
 <template>
   <div id="wrap">
     <Header />
-    <main id="main">
-      <Intro />
-      <Experience />
-      <Project />
-    </main>
+    <Main />
+    <Footer />
   </div>
 </template>
 
 <script>
-  import Header from './components/Header.vue'
-  import Intro from './views/Intro.vue';
-  import Experience from './views/Experience.vue';
-  import Project from './views/Project.vue';
-
+  import Header from './components/Header.vue';
+  import Main from './views/Main.vue';
+  import Footer from './components/Footer.vue';
+  
   export default {
     components : {
       Header,
-      Intro,
-      Experience,
-      Project,
+      Main,
+      Footer
     }
   }
 </script>
