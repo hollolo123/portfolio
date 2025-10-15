@@ -1,40 +1,13 @@
-// .main__light {
-//   background-color: #f1e7ce;
-//   color: #18171F;
-// }
-// .dark {
-//   background-color: #18171F;
-//   color: #e4e4e4;
-// }
-
-.intro__bg{
-  position: relative;
-  z-index: 1;
-  background-image: url('../../assets/images/forest.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center cover;
-  background-color:#f1e7ce;
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgb(243, 237, 222, 0), rgba(0,0,0,0.4),rgba(0,0,0, .96));
-  }
-}
+@use '@/styles/common/import/variables' as *;
 
 section {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-color: #f1e7ce;
+  background-color: $beige-color;
   // background-attachment: fixed;
   &.dark {
-    background-color: #18171F;
+    background-color: $dark-color;
     color: #e4e4e4;
   }
   .contents {
@@ -43,27 +16,16 @@ section {
       padding: 5rem 2rem;
       text-align: center;
     }
-    /* Intro */
-    .main__slogan {
-      margin:7rem 0;
-      > h2 {
-        font-size: 7.5rem;
-        font-weight: 700;
-        line-height: 7rem;
-      }
-      .text {
-        margin-top: 5rem;
-      }
-    } 
+    
   }
 }
 
 .footer {
   text-align: center;
   padding: 1rem 0;
-  background-color: #f1e7ce;
-  color: #18171F;
-  border-top: 1px solid #18171F;
+  background-color: $beige-color;
+  color: $dark-color;
+  border-top: 1px solid $dark-color;
   p {
     font-size: 1.4rem;
   }

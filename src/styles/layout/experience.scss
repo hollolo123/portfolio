@@ -1,3 +1,5 @@
+@use '@/styles/common/import/variables' as *;
+
 /* My Experience*/
 .exp__wrapper {
   margin: 4rem 0;
@@ -113,9 +115,7 @@
         .skill {
           margin: 2rem 0;
         }
-        .txt {
-          //padding: 0 2rem;
-        }
+        
       }
     }
   }

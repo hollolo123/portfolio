@@ -1,4 +1,5 @@
-@forward '@/assets/font/font.scss';
+@forward './import/_variables';
+@forward '@/assets/font/font';  
 
 html { font-size: 10px; }
 

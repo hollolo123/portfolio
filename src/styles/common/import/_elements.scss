@@ -1,0 +1,67 @@
+/*
+* Common - Top
+*/
+.common__top {
+  margin: {
+    bottom: 2rem;
+  }
+  padding: {
+    bottom: 2rem;
+  }
+  border-bottom: 2px solid $dark-color;
+  
+  span,
+  strong {
+    font-size: 1.8rem;
+  }
+
+  strong {
+    margin-left: 1rem;
+    color: $main-color;
+  }
+
+  .top__search {
+    margin: {
+      top: 2rem;
+    }
+
+    .input__wrap {
+      position: relative;
+
+      input {
+        @include input() {
+          padding: 0 5rem 0 1.5rem;
+          transition: .5s;
+          
+          &:focus,
+          &:focus-visible {
+            border: {
+              color: $main-color;
+            }
+            outline: none;
+
+            + button {
+              color: $main-color;
+            }
+          }
+        }
+      }
+
+      button {
+        @include button(transparent, #000, 'md') {
+          position: absolute;
+          top: 0;
+          right: 0;
+          min-width: 5rem;
+          height: 100%;
+          transition: .5s;
+        }
+
+        i {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+

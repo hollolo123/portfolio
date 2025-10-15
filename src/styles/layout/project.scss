@@ -1,3 +1,5 @@
+@use '@/styles/common/import/variables' as *;
+
 /* Pjoject*/
 .proj__wrapper {
   margin-top: 6rem;
@@ -10,7 +12,7 @@
     height: 40rem;
     border-radius: 10px;
     overflow: hidden;
-    background: #18171F;
+    background: $dark-color;
     box-sizing: border-box;
     .item {
       width: 100%;
@@ -19,13 +21,10 @@
         display: block;
         width: 100%;
         height: 100%;
-        .proj__bg {
+        .proj__thumbnail {
           display: block;
           width: 100%;
           height: 100%;
-          background-image: url('../../assets/images/project/project_img.jpg');
-          background-repeat: no-repeat;
-          background-size: cover;
           transition: .5s;
           &::after {
             content: '';
@@ -42,20 +41,27 @@
             scale: 1.5;
             opacity: .4;
           }
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
         }
         .proj__title {
           position: absolute;
           bottom: 0;
           color: #fff;
-          // height: 8rem;
+          height: 10rem;
           width: 100%;
-          padding:3rem;
+          padding:1.5rem 2.5rem 0 2.5rem;
           text-align: left;
+          background-color: $dark-color;
           box-sizing: border-box;
           z-index: 10;
           // outline: 1px dotted #fff;
           .tit {
-            font-size: 2rem;
+            font-size: 1.8rem;
           }
           .skill {
         
@@ -70,6 +76,7 @@
   .proj__wrapper {
     .exp__box {
       width: 33.33%;
+      
     }
   }
 }

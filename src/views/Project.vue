@@ -2,49 +2,23 @@
   <section>
     <div class="contents">
       <div class="inner">
-        <h3>Project</h3>
+        <Title title="Project" />
         <div class="proj__wrapper">
-          <div class="proj__box">
+          <div 
+            v-for="project in projectData" 
+            :key="project.id" 
+            class="proj__box">
             <div class="item">
-              <a href="#">
-                <div class="proj__bg">
-                  img
+              <a :href="project.url" target="_blank">
+                <div class="proj__thumbnail">
+                  <img :src="project.thumbnail" :alt="project.name">
                 </div>
                 <div class="proj__title">
-                  <p class="tit">포트폴리오 사이트</p>
-                  <p class="skill">Vue, HTML5, SCSS</p>
+                  <p class="tit">{{ project.name }}</p>
+                  <!-- <p class="skill">{{ project.keyword.join(', ') }}</p> -->
                 </div>
               </a>
             </div>
-
-          </div>
-          <div class="proj__box">
-            <div class="item">
-              <a href="#">
-                <div class="proj__bg">
-                  img
-                </div>
-                <div class="proj__title">
-                  <p class="tit">포트폴리오 사이트</p>
-                  <p class="skill">Vue, HTML5, SCSS</p>
-                </div>
-              </a>
-            </div>
-
-          </div>
-          <div class="proj__box">
-            <div class="item">
-              <a href="#">
-                <div class="proj__bg">
-                  img
-                </div>
-                <div class="proj__title">
-                  <p class="tit">포트폴리오 사이트</p>
-                  <p class="skill">Vue, HTML5, SCSS</p>
-                </div>
-              </a>
-            </div>
-
           </div>
         </div>
       </div>
@@ -53,7 +27,19 @@
 </template>
 
 <script>
+import Title from '@/components/TitleComp.vue';
+import { projectData } from '@/data/project/project.js';
 
+export default {
+  components: {
+    Title
+  },
+  data() {
+    return {
+      projectData
+    }
+  }
+}
 </script>
 
 <style lang="scss">

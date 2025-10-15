@@ -1,17 +1,10 @@
 <template>
   <div id="main__wrap">
-    <section>
-      <Intro />
-    </section>
-    <section>
-      <Experience />
-    </section>
-    <section>
-      <Project />
-    </section>
-    <section>
-      <Comment />
-    </section>
+    <Intro />
+    <Experience />
+    <Project />
+    <Comment />
+    
   </div>
 </template>
 

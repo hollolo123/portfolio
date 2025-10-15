@@ -2,9 +2,10 @@
   <section>
     <div class="contents">
       <div class="inner">
-        <div class="main__slogan ">
+        <div class="main__slogan">
           <h2>FRONT-END</h2>
           <h3>Developer & UI designer</h3>
+          <span class="cursor">|</span>
           <p class="text">
             안녕하세요.<br/>
             디자인과 개발을 아우르는<br/> 
@@ -20,10 +21,12 @@
 </template>
 
 <script>
+  
 
 </script>
 
 <style lang="scss">
+  @use '@/styles/layout/intro' as *;
   @use '@/styles/layout/layout' as *;
 
 </style>

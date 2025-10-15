@@ -1,3 +1,5 @@
+@use '@/styles/common/import/_variables' as *;
+
 header {
   position: relative;
   #header {
@@ -5,7 +7,16 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    height: 6rem;
     z-index: 999;
+    transition: all 0.3s ease;
+    /* scrolled class 추가 시 적용 */
+    &.scrolled {
+      background: rgb(241, 231, 206,.8);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      // box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    }
     .header__in {
       display: flex;
       align-items: center;
@@ -24,33 +35,59 @@ header {
       .gnb {
         .gnb__btn {
           display: block;
+          position: relative;
+          z-index: 10;
           span {
             display: block;
             width: 2.5rem;
             height: 2px;
-            background-color: #000;
+            background-color: $dark-color;
             margin-bottom: .5rem;
+            transition: .5s;
           }
           &.active {
             display: block;
             span {
               &:nth-child(1) {
-                transform: rotate(45deg) translate(5px, 5px);
+                transform: rotate(45deg) translate(0px, 5px);
               }
               &:nth-child(2) {
-                transform: rotate(-45deg) translate(5px, -5px);
+                transform: rotate(-45deg) translate(1px, -5px);
+              }
+              &:nth-child(3) {
+                display: none;
               }
             }
           }
         }
         > ul {
           display: none;
-          // display: flex;
+          position: absolute;
+          top: 6rem;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+
+          background: $dark-color;
+          &.active {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+          }
           li {
+            width: 100%;
+            text-align: right;
             a {
-              display: inline-block;
+              display:block;
+              color: $white-color;
               padding: 0 3rem;
-              line-height: 6rem;
+              line-height: 5rem;
+              font-size: 1.8rem;
+              color: $beige-color;
+              &:hover {
+                background: rgb(241, 231, 206,.05);
+              }
             }
           }
         }
@@ -58,4 +95,44 @@ header {
     }
   }
 
+}
+
+@media (min-width: 768px) {
+  header {
+    #header {
+      .header__in {
+        .gnb {
+          height: 6rem;
+          .gnb__btn {
+            display: none;
+          }
+          > ul {
+            display: flex;
+            position: relative;
+            width: 100%;
+            top: 1rem;
+            flex-direction: row;
+            align-items: center;
+            height:6rem;
+            background: transparent;
+            li {
+              height: 4rem;
+              text-align: center;
+              a {
+                display: inline-block;
+                background: transparent;
+                color: $dark-color;
+                &:hover {
+                  border-bottom: 3px solid $dark-color;
+                  padding-bottom: 0.1rem;
+                  background: transparent;
+                  color: #000;
+                }
+              }
+            }
+          }       
+        }
+      }
+    }
+  }
 }
