@@ -28,7 +28,7 @@
 
 <script>
 import Title from '@/components/common/TitleComp.vue';
-import { projectData } from '@/data/project/project.js';
+import projectData from '@/data/project/project.json';
 
 export default {
   components: {
@@ -36,7 +36,7 @@ export default {
   },
   data() {
     return {
-      projectData
+      projectData: projectData
     }
   }
 }
