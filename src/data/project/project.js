@@ -25,7 +25,7 @@ export const projectData = [
   },
   {
     id : 3,
-    name : '대전세잔직업전문학교 리뉴얼',
+    name : '대전세잔직업전문학교 리뉴얼 <Vue Compile>',
     type : 'personal',
     keyword : ['Vue.js', 'SCSS', 'Vite', 'Vercel'],
     thumbnail: cezanneThumbnail,

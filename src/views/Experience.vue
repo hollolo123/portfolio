@@ -95,8 +95,8 @@
 </template>
 
 <script>
-import Title from '@/components/TitleComp.vue';
-import ExpBoxComp from '@/components/ExpBoxComp.vue';
+import Title from '@/components/common/TitleComp.vue';
+import ExpBoxComp from '@/components/common/ExpBoxComp.vue';
 export default {
   components: {
     Title,

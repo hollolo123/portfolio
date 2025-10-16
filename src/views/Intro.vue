@@ -3,8 +3,8 @@
     <div class="contents">
       <div class="inner">
         <div class="main__slogan">
-          <h2>FRONT-END</h2>
-          <h3>Developer & UI designer</h3>
+          <h2>FRONT-END Developer</h2>
+          <h2>& UI designer</h2>
           <span class="cursor">|</span>
           <p class="text">
             안녕하세요.<br/>
