@@ -15,7 +15,9 @@
                 </div>
                 <div class="proj__title">
                   <p class="tit">{{ project.name }}</p>
-                  <p class="skill">{{ project.keyword.join(', ') }}</p>
+                  <p class="skill">
+                    {{ project.keyword.join(', ') }}
+                  </p>
                 </div>
               </a>
             </div>
@@ -28,7 +30,7 @@
 
 <script>
 import Title from '@/components/common/TitleComp.vue';
-import projectData from '@/data/project/project.json';
+import projectData from '@/data/project/project.js';
 
 export default {
   components: {
@@ -36,7 +38,7 @@ export default {
   },
   data() {
     return {
-      projectData: projectData
+      projectData
     }
   }
 }

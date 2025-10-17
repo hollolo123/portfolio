@@ -5,7 +5,7 @@
         <div class="main__slogan">
           <h2>FRONT-END Developer</h2>
           <h2>& UI designer</h2>
-          <span class="cursor">|</span>
+          <!-- <span class="cursor">|</span> -->
           <p class="text">
             안녕하세요.<br/>
             디자인과 개발을 아우르는<br/> 
