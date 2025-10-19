@@ -1,4 +1,5 @@
 @use '@/styles/common/import/variables' as *;
+@use '@/styles/common/import/mixin' as *;
 
 /* Pjoject*/
 .proj__wrapper {
@@ -27,16 +28,10 @@
           background: $dark-color;
           border-color: $dark-color;
         }
-        &:hover {
-          color: #fff;
-          background: $dark-color;
-          border-color: $dark-color;
-        }
       }
     }
   }
   .proj__box__wrapper {
-  
     .proj__box {
       position: relative;
       width: 100%;
@@ -47,98 +42,213 @@
       background: $dark-color;
       box-sizing: border-box;
       .item {
+        position: relative;
         width: 100%;
         height: 100%;
-        a {
+        cursor: pointer;
+        .proj__thumbnail {
           display: block;
-          width: 100%;
-          height: 100%;
-          .proj__thumbnail {
+          // width: 100%;
+          // height: 100%;
+          transition: .5s;
+          
+          &::after {
+            content: '';
             display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            transition: .5s;
-            &::after {
-              content: '';
-              display: block;
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              background: rgba(0, 0, 0, .6);
-              z-index: 1;
-            }
-            &:hover {
-              scale: 1.5;
-              opacity: .4;
-            }
-            img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              object-position: center;
-            }
+            background: rgba(0, 0, 0, .05);
+            z-index: 1;
           }
-          .proj__title {
-            position: absolute;
-            bottom: 0;
-            color: #fff;
-            height: 20rem;
+          &:hover {
+            scale: 1.5;
+            opacity: 0.6;
+          }
+          img {
             width: 100%;
-            padding:2rem 2.5rem;
-            text-align: left;
-            background-color: $dark-color;
-            box-sizing: border-box;
-            z-index: 10;
-            .tit {
-              font-size: 1.8rem;
-            }
-            .desc {
-              font-size: 1.4rem;
-              opacity: .6;
-              margin-top: 1rem;
-              min-height: 3rem;
-            }
-            .skill {
-              margin: 1.5rem 0;
-              span {
-                display: inline-block;
-                font-size: 1.2rem;
-                background: #2b2f3c;
-                color: #fff;
-                opacity: .8;
-                padding: 0.5rem 1rem;
-                border-radius: 0.5rem;
-                margin-right: 0.5rem;
-                margin-bottom: 0.5rem;
-              }
-            }
-            .btn_site {
-              position: absolute;
-              right: 2rem;
-              bottom: 2.5rem;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+          }
+        }
+        .proj__title {
+          position: absolute;
+          bottom: 0;
+          color: #fff;
+          height: 20rem;
+          width: 100%;
+          padding:2rem 2.5rem;
+          text-align: left;
+          background-color: $dark-color;
+          box-sizing: border-box;
+          z-index: 10;
+          .tit {
+            font-size: 1.8rem;
+          }
+          .type {
+            display: none;
+          }
+          .desc {
+            font-size: 1.4rem;
+            opacity: .6;
+            margin-top: 1rem;
+            min-height: 3rem;
+          }
+          .skill {
+            margin: 1.5rem 0;
+            span {
+              display: inline-block;
+              font-size: 1.2rem;
+              background: #2b2f3c;
               color: #fff;
               opacity: .8;
-            
+              padding: 0.5rem 1rem;
+              border-radius: 0.5rem;
+              margin-right: 0.5rem;
+              margin-bottom: 0.5rem;
             }
           }
+          .btn_site {
+            position: absolute;
+            bottom: 2.5rem;
+            right: 2rem;
+            font-size: 1.2rem;
+            color: #fff;
+            opacity: .8;
+            transition: .3s;
+            span {
+              &:first-child {
+                margin-right: 2.5rem;
+              }
+            }
+            @include arrow-icon();
+          }
+        }
+        // &:hover {
+        //   .btn_site {
+        //     visibility: visible;
+        //     position: absolute;
+        //     right: 2rem;
+        //     bottom: 2.5rem;
+        //   }
+        // }
+      }
+      
+    }
+  }
+}
+
+/* Modal popup */
+.modal__popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .65);
+  z-index: 99;
+  .modal__content { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 50rem;
+    background: $dark-color;
+    border-radius: 10px;
+    padding: 3.5rem;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: left;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5);
+    h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #fff;
+      text-align: center;
+    }
+    .btn__close {
+      position: absolute;
+      right: 2rem;
+      top: 2rem;
+      span {
+        font-size: 2rem;
+        color: #fff;
+      }
+    }
+    .detail_view {
+      dl {
+        padding-top: 1.5rem;
+        dt {
+          position: relative;
+          font-size: 1.6rem;
+          padding-left: .8rem;
+          &::after {
+            display: block;
+            content: '';
+            position: absolute;
+            top: .8rem;
+            left: 0;
+            width: 2px;
+            height: 2px;
+            background: #fff;
+            
+          }
+        }
+        dd {
+          font-size: 1.4rem;
+          font-weight: 400;
+          opacity: .6;
+          margin: 1.5rem 0;
+          padding-left: .8rem;
+        }
+      }
+    }
+    .btn__site {
+      position: absolute;
+      bottom: 3rem;
+      right: 3rem;
+      a {
+        display: inline-block;
+        text-align: left;
+        margin-left: 1.2rem;
+        width: 20rem;
+        line-height: 4.5rem;
+        border: 1px solid #fff;
+        color: #fff;
+        border-radius: 5rem;  
+        font-size: 1.4rem;
+        @include arrow-icon();
+        span {
+          margin-left: 3.5rem;
         }
       }
     }
   }
-  
 }
+
 
 @media (min-width: 992px) {
   .proj__wrapper {
     .proj__box__wrapper {
       display: flex;
       flex-direction: row;
+      justify-content: center;
       gap: 20px;
       .proj__box {
         width: 50%;
       }
+    }
+  } 
+
+  .modal__popup {
+    .modal__content {
+      width: 80rem;
+      height: 50rem;
     }
   } 
 }
