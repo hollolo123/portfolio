@@ -117,7 +117,7 @@
             right: 2rem;
             font-size: 1.2rem;
             color: #fff;
-            opacity: .8;
+            opacity: .5;
             transition: .3s;
             span {
               &:first-child {
@@ -135,6 +135,9 @@
         //     bottom: 2.5rem;
         //   }
         // }
+        &:hover .btn_site {
+          opacity: 1;
+        }
       }
       
     }

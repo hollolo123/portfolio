@@ -1,7 +1,7 @@
 @use '@/styles/common/import/variables' as *;
 
 .comment {
-  min-height: 80rem;
+  //min-height: 80rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,6 +9,12 @@
   .contents {
     width: 100%;
     height: 100%;
-    
+  }
+  .title {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+  .commt {
+    margin-top: 3rem;
   }
 }
