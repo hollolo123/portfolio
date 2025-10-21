@@ -92,7 +92,14 @@ export default {
       this.popState = !this.popState;
       if (project) {
         this.modalData = project;
-      }
+        
+        // 모달창 열렸을 때 스크롤 바 hidden
+        document.body.style.overflow = 'hidden';  
+        } 
+        // 닫혔을때 auto
+        else {
+          document.body.style.overflow = 'auto';
+        } 
     },
   },
   computed : {
@@ -106,3 +113,7 @@ export default {
   
 }
 </script>
+
+<style lang="scss" scoped>
+
+</style>

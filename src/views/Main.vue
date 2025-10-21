@@ -4,7 +4,6 @@
     <Experience />
     <Project />
     <Comment />
-    
   </div>
 </template>
 
@@ -21,13 +20,9 @@ export default {
     Project,
     Comment
   },
-  data() {
-    return {
-      name : 'Main',
-    }
-  }
+  
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 </style>

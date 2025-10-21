@@ -62,7 +62,7 @@
         </div>
         <div class="exp__wrapper">
           <!-- career -->
-          <Title subtitle="Career" />
+          <Title subtitle="Career & Education" />
           <div class="exp__wrap">
             <ExpBoxComp 
               date="2011.02~2013.02" 
@@ -78,10 +78,16 @@
               txt1="통계청 나라통계, KOSIS, 국가지표체계 등 다수의 프로젝트 참여" 
               txt2="HTML, CSS를 활용해 웹 표준, 웹접근성 중심의 웹 사이트 퍼블리싱">
             </ExpBoxComp>
+            <ExpBoxComp 
+              date="2025.04~2025.11" 
+              company="세잔직업전문학교" 
+              team="교육 및 훈련" 
+              txt1="프론트엔드 개발 과정 교육" 
+              txt2="HTML, CSS, JavaScript, Vue, React, Node.js, db등">
+            </ExpBoxComp>
           </div>
         </div>
-        <div class="exp__wrapper">
-          <!-- Education -->
+        <!-- <div class="exp__wrapper">
           <Title subtitle="Education" />
           <div class="exp__wrap">
             <ExpBoxComp 
@@ -91,9 +97,8 @@
               txt1="프론트엔드 개발 과정 교육" 
               txt2="HTML, CSS, JavaScript, Vue, React, Node.js, db등">
             </ExpBoxComp>
-            
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>

@@ -1,5 +1,5 @@
 <template>
-  <section class="comment">
+  <section id="comment" class="comment">
     <div class="contents">
       <div class="inner" >
         <p class="title">"디자인과 개발을 유기적으로 연결하며<br/>
