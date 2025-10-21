@@ -1,5 +1,5 @@
 <template>
-  <section class="dark">
+  <section id="experience" class="dark">
     <div class="contents">
       <div class="inner">
         <!-- title : component -->
@@ -19,9 +19,10 @@
                   <span><img src="@/assets/images/icon/Vue.svg" alt="Vue"></span>
                   <span><img src="@/assets/images/icon/MySQL.svg" alt="MySQL"></span>
                 </li>
-                <li class="txt">다양한 메서드와 기능을 활용하여 
-                웹 페이지의 동적인 효과를 
-                구현 할 수 있습니다. </li>
+                <li class="txt">
+                  Vue, React등 다양한 프레임워크를 활용하여<br/>
+                  동적인 효과를 구현 할 수 있습니다.
+                </li>
               </ul>
             </div>
             <div class="exp__box"> 
@@ -33,9 +34,11 @@
                   <span><img src="@/assets/images/icon/CSS3.svg" alt="CSS3"></span>
                   <span><img src="@/assets/images/icon/Sass.svg" alt="Sass"></span>
                 </li>
-                <li class="txt">다양한 메서드와 기능을 활용하여 
-                웹 페이지의 동적인 효과를 
-                구현 할 수 있습니다. </li>
+                <li class="txt">
+                  웹표준, 웹접근성을 중심의<br/>
+                  웹 페이지를 구현 할 수<br/> 
+                  있습니다.
+                </li>
               </ul>
             </div>
             <div class="exp__box">
@@ -48,9 +51,11 @@
                   <span><img src="@/assets/images/icon/Figma.svg" alt="Figma"></span>
                   <span><img src="@/assets/images/icon/VsCode.svg" alt="VsCode"></span>
                 </li>
-                <li class="txt">다양한 메서드와 기능을 활용하여 
-                웹 페이지의 동적인 효과를 
-                구현 할 수 있습니다. </li>
+                <li class="txt">
+                  프로그램의 기본 기능을 전반적으로<br/>
+                  다룰 수 있으며 다양한 도구를 사용하여<br/>
+                  디자인을 구현할 수 있습니다.
+                </li>
               </ul>
             </div>
           </div>

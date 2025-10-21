@@ -1,5 +1,9 @@
 @use '@/styles/common/import/_variables' as *;
 
+.open {
+  overflow: hidden;
+}
+
 header {
   position: relative;
   #header {
@@ -67,8 +71,8 @@ header {
           left: 0;
           width: 100%;
           height: 100vh;
-
           background: $dark-color;
+          z-index: 99;
           &.active {
             display: flex;
             flex-direction: column;
@@ -117,13 +121,15 @@ header {
             background: transparent;
             li {
               text-align: center;
-              a {
-                display: inline-block;
+              span {
+                display: inline;
                 background: transparent;
                 color: $dark-color;
+                transition: .2s;
+                cursor: pointer;
                 &:hover {
-                  border-bottom: 3px solid $dark-color;
-                  padding-bottom: 0.1rem;
+                  border-bottom: 4px solid $dark-color;
+                  padding-bottom: 1.3rem;
                   background: transparent;
                   color: #000;
                 }

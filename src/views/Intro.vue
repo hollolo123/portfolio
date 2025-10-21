@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="intro">
     <div class="contents">
       <div class="inner">
         <div class="main__slogan">

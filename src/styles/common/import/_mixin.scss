@@ -11,6 +11,43 @@
 }
 
 /*
+* Mixin Name : arrow-icon
+* Mixin Parameter : 
+* Mixin Description : 화살표 아이콘 정의
+*
+*/
+@mixin arrow-icon() {
+  [class*="arr-icon"] {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;  
+    color:#fff;
+    box-sizing: border-box;
+    &:after, &:before {
+      content: '';
+      box-sizing: border-box;
+    }
+  }
+  [class*="arr-icon1"] {
+    width: 8px;
+    height: 8px;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    transform : rotate(45deg);
+    &:before {
+      right: 0;
+      top: -1px;
+      position: absolute;
+      height: 1px;
+      box-shadow: inset 0 0 0 32px;
+      transform: rotate(-45deg);
+      width: 30px;
+      transform-origin: right top;
+    }
+  }
+}
+
+/*
 * Mixin Name : button
 * Mixin Parameter : bg-color, color, clazz (Default : 'lg')
 * Mixin Description : 버튼 정의
