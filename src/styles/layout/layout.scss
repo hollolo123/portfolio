@@ -20,6 +20,19 @@ section {
   }
 }
 
+.comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 0;
+  background-color: $beige-color;
+  color: $dark-color;
+  p {
+    font-size: 2rem;
+  } 
+}
+
 .footer {
   text-align: center;
   padding: 1rem 0;
