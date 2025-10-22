@@ -19,11 +19,11 @@
       </div>
       <div class="btn__site">
         <a :href="modalData.github" target="_blank" >
-          <span>깃허브 바로가기</span>
+          <span>깃허브</span>
           <span class="arr-icon1"></span>
         </a>
         <a :href="modalData.url" target="_blank">
-          <span>사이트 바로가기</span>
+          <span>사이트</span>
           <span class="arr-icon1"></span>
         </a>
       </div>

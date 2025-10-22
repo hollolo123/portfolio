@@ -18,9 +18,10 @@
       li {
         width: 12rem;
         font-weight: 500;
-        line-height: 4rem;
+        line-height: 3.5rem;
         border: 1px solid $dark-color;
-        border-radius: 20px;
+        border-radius: 40px;
+        text-align: center;
         cursor: pointer;
         transition: all 0.3s ease;
         &.active {
@@ -35,9 +36,9 @@
     .proj__box {
       position: relative;
       width: 100%;
-      height: 48rem;
+      height: 46rem;
       margin-bottom: 20px;
-      border-radius: 10px;
+      border-radius: 6px;
       overflow: hidden;
       background: $dark-color;
       box-sizing: border-box;
@@ -64,7 +65,7 @@
             z-index: 1;
           }
           &:hover {
-            scale: 1.5;
+            //scale: 1.5;
             opacity: 0.6;
           }
           img {
@@ -86,13 +87,13 @@
           box-sizing: border-box;
           z-index: 10;
           .tit {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
           }
           .type {
             display: none;
           }
           .desc {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             opacity: .6;
             margin-top: 1rem;
             min-height: 3rem;
@@ -101,12 +102,12 @@
             margin: 1.5rem 0;
             span {
               display: inline-block;
-              font-size: 1.2rem;
+              font-size: 1rem;
               background: #2b2f3c;
               color: #fff;
               opacity: .8;
               padding: 0.5rem 1rem;
-              border-radius: 0.5rem;
+              border-radius: 0.3rem;
               margin-right: 0.5rem;
               margin-bottom: 0.5rem;
             }
@@ -152,14 +153,14 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, .65);
-  z-index: 99;
+  z-index: 999;
   .modal__content { 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    height: 50rem;
+    width: 96%;
+    margin: 0 auto;
     background: $dark-color;
     border-radius: 10px;
     padding: 3.5rem;
@@ -169,8 +170,8 @@
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5);
     h3 {
       font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 20px;
+      font-weight: 500;
+      margin: 2rem 0;
       color: #fff;
       text-align: center;
     }
@@ -188,7 +189,7 @@
         padding-top: 1.5rem;
         dt {
           position: relative;
-          font-size: 1.6rem;
+          font-size: 1.4rem;
           padding-left: .8rem;
           &::after {
             display: block;
@@ -203,7 +204,7 @@
           }
         }
         dd {
-          font-size: 1.4rem;
+          font-size: 1.2rem;
           font-weight: 400;
           opacity: .6;
           margin: 1.5rem 0;
@@ -212,22 +213,35 @@
       }
     }
     .btn__site {
-      position: absolute;
-      bottom: 3rem;
-      right: 3rem;
+      margin-top: 2rem;
       a {
         display: inline-block;
         text-align: left;
-        margin-left: 1.2rem;
-        width: 20rem;
-        line-height: 4.5rem;
+        margin:0 0.5rem;
+        padding: 0 0.5rem;
+        line-height: 3.5rem;
         border: 1px solid #fff;
         color: #fff;
         border-radius: 5rem;  
-        font-size: 1.4rem;
-        @include arrow-icon();
-        span {
-          margin-left: 3.5rem;
+        font-size: 1.2rem;
+        //@include arrow-icon();
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .modal__popup {
+    .modal__content {
+      width: 90%;
+      .btn__site {
+        a {
+          margin:0 0.5rem;
+          //@include arrow-icon();
+          span {
+            margin-left: 3.5rem;
+          }
         }
       }
     }

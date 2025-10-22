@@ -15,8 +15,8 @@
                 <li class="icon">
                   <span><img src="@/assets/images/icon/JavaScript.svg" alt="Javascript"></span>
                   <span><img src="@/assets/images/icon/jQuery.svg" alt="jQuery"></span>
-                  <span><img src="@/assets/images/icon/React.svg" alt="React"></span>
                   <span><img src="@/assets/images/icon/Vue.svg" alt="Vue"></span>
+                  <span><img src="@/assets/images/icon/React.svg" alt="React"></span>
                   <span><img src="@/assets/images/icon/MySQL.svg" alt="MySQL"></span>
                 </li>
                 <li class="txt">
@@ -27,7 +27,7 @@
             </div>
             <div class="exp__box"> 
               <ul>
-                <li class="tit2">Web Design</li>
+                <li class="tit">Web Design</li>
                 <li class="skill">HTML5, CSS3, SCSS</li>
                 <li class="icon">
                   <span><img src="@/assets/images/icon/HTML5.svg" alt="HTML5"></span>
@@ -36,14 +36,13 @@
                 </li>
                 <li class="txt">
                   웹표준, 웹접근성을 중심의<br/>
-                  웹 페이지를 구현 할 수<br/> 
-                  있습니다.
+                  웹 페이지를 구현 할 수 있습니다.
                 </li>
               </ul>
             </div>
             <div class="exp__box">
               <ul>
-                <li class="tit3">Tool</li>
+                <li class="tit">Tool</li>
                 <li class="skill">PhotoShop, adobeXD, Figma, VSCode</li>
                 <li class="icon">
                   <span><img src="@/assets/images/icon/Photoshop.svg" alt="Photoshop"></span>

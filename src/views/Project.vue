@@ -95,10 +95,13 @@ export default {
         
         // 모달창 열렸을 때 스크롤 바 hidden
         document.body.style.overflow = 'hidden';  
+        // TopBtn 숨기기
+        document.getElementById('topBtn').classList.add('hide');
         } 
         // 닫혔을때 auto
         else {
           document.body.style.overflow = 'auto';
+          
         } 
     },
   },
