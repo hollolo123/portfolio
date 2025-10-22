@@ -1,7 +1,7 @@
 @use './import/_variables' as *;
 @forward '@/assets/font/font';  
 
-html { font-size: 10px; }
+html { font-size: 14px; }
 
 body {
   font: {
@@ -9,6 +9,7 @@ body {
     size: 1.6rem;
     weight: 400;
   }
+  min-width: 420px;
   line-height: 1.5;
 }
 
@@ -35,8 +36,8 @@ h4 { font-size: 2.5rem;}
     position: fixed;
     bottom: 100px;
     right: 20px;
-    width: 6.5rem;
-    height: 6.5rem;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
     background: #2b2f3c;
     color:$beige-color;

@@ -26,14 +26,15 @@ header {
       align-items: center;
       justify-content: space-between;
       height: 6rem;
-      padding: 0 2rem;
+      padding: 0 1rem;
       .logo {
         a {
           display: inline-block;
           line-height: 6rem;
           padding: 0 .5rem;
           font-weight: 700;
-          font-size: 2.4rem;
+          font-size: 2rem;
+          letter-spacing: -0.05rem;
         }
       }
       .gnb {
@@ -43,7 +44,7 @@ header {
           z-index: 10;
           span {
             display: block;
-            width: 2.5rem;
+            width: 2rem;
             height: 2px;
             background-color: $dark-color;
             margin-bottom: .5rem;
@@ -53,10 +54,10 @@ header {
             display: block;
             span {
               &:nth-child(1) {
-                transform: rotate(45deg) translate(0px, 5px);
+                transform: rotate(45deg) translate(0px, 6px);
               }
               &:nth-child(2) {
-                transform: rotate(-45deg) translate(1px, -5px);
+                transform: rotate(-45deg) translate(1px, -6px);
               }
               &:nth-child(3) {
                 display: none;
@@ -87,7 +88,7 @@ header {
               color: $white-color;
               padding: 0 3rem;
               line-height: 5rem;
-              font-size: 1.8rem;
+              font-size: 1.6rem;
               color: $beige-color;
               &:hover {
                 background: rgb(241, 231, 206,.05);
