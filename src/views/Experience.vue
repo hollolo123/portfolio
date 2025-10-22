@@ -20,8 +20,8 @@
                   <span><img src="@/assets/images/icon/MySQL.svg" alt="MySQL"></span>
                 </li>
                 <li class="txt">
-                  Vue, React등 다양한 프레임워크를 활용하여<br/>
-                  동적인 효과를 구현 할 수 있습니다.
+                  Vue, React등 다양한 프레임워크를<br/> 
+                  활용하여 동적인 효과를 구현 할 수 있습니다.
                 </li>
               </ul>
             </div>
@@ -87,18 +87,6 @@
             </ExpBoxComp>
           </div>
         </div>
-        <!-- <div class="exp__wrapper">
-          <Title subtitle="Education" />
-          <div class="exp__wrap">
-            <ExpBoxComp 
-              date="2025.04~2025.11" 
-              company="세잔직업전문학교" 
-              team="교육 및 훈련" 
-              txt1="프론트엔드 개발 과정 교육" 
-              txt2="HTML, CSS, JavaScript, Vue, React, Node.js, db등">
-            </ExpBoxComp>
-          </div>
-        </div> -->
       </div>
     </div>
   </section>

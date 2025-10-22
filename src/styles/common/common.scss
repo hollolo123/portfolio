@@ -6,7 +6,7 @@ html { font-size: 14px; }
 body {
   font: {
     family: 'Pretenadrd', Arial, Helvetica, sans-serif;
-    size: 1.6rem;
+    size: 1.4rem;
     weight: 400;
   }
   min-width: 420px;
@@ -16,10 +16,10 @@ body {
 a { text-decoration: none; color: inherit; }
 
 /* h */
-h1 { font-size: 4rem; font-weight: 700; }
-h2 { font-size: 3.5rem; font-weight: 700; }
-h3 { font-size: 2.6rem; font-weight: 600; }
-h4 { font-size: 2.5rem;}
+h1 { font-size: 3.5rem; font-weight: 700; }
+h2 { font-size: 3rem; font-weight: 700; }
+h3 { font-size: 2.2rem; font-weight: 600; }
+h4 { font-size: 1.4rem;}
 
 
 /* topBtn */
@@ -84,8 +84,8 @@ h4 { font-size: 2.5rem;}
   }
 }
 
-// @media all and (min-width:1921px) {
-//   .inner {
-//     max-width: 1440px;
-//   }
-// }
+@media all and (min-width:1921px) {
+  .inner {
+    max-width: 1440px;
+  }
+}
