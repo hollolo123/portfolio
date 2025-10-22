@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <p>Copyright 2025. Park Su-rim. All rights reserved.</p>
+    <p>Copyright 2025 Park Su-rim. All rights reserved.</p>
   </div>
 </template>
 

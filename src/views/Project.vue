@@ -101,7 +101,8 @@ export default {
         // 닫혔을때 auto
         else {
           document.body.style.overflow = 'auto';
-          
+          // TopBtn 보이기
+          document.getElementById('topBtn').classList.remove('hide');
         } 
     },
   },

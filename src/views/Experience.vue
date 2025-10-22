@@ -61,7 +61,7 @@
         </div>
         <div class="exp__wrapper">
           <!-- career -->
-          <Title subtitle="Career & Education" />
+          <h3>Career & Education</h3>
           <div class="exp__wrap">
             <ExpBoxComp 
               date="2011.02~2013.02" 
