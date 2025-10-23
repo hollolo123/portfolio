@@ -36,7 +36,6 @@
     .proj__box {
       position: relative;
       width: 100%;
-      // height: 46rem;
       margin-bottom: 20px;
       border-radius: 6px;
       overflow: hidden;
@@ -49,7 +48,8 @@
         cursor: pointer;
         .proj__thumbnail {
           display: block;
-          min-height: 42rem;
+          position: relative;
+          min-height: 15rem;
           transition: .5s;
           
           &::after {
@@ -64,7 +64,6 @@
             z-index: 1;
           }
           &:hover {
-            //scale: 1.5;
             opacity: 0.6;
           }
           img {
@@ -75,10 +74,9 @@
           }
         }
         .proj__title {
-          position: absolute;
-          bottom: 0;
+          position: relative;
           color: #fff;
-          height: 20rem;
+          min-height: 25rem;
           width: 100%;
           padding:2rem 2.5rem;
           text-align: left;
@@ -87,6 +85,7 @@
           z-index: 10;
           .tit {
             font-size: 1.6rem;
+            letter-spacing: -0.05rem;
           }
           .type {
             display: none;
@@ -101,7 +100,7 @@
             margin: 1.5rem 0;
             span {
               display: inline-block;
-              font-size: 1rem;
+              font-size: 1.2rem;
               background: #2b2f3c;
               color: #fff;
               opacity: .8;
@@ -125,16 +124,10 @@
               }
             }
             @include arrow-icon();
+            
           }
         }
-        // &:hover {
-        //   .btn_site {
-        //     visibility: visible;
-        //     position: absolute;
-        //     right: 2rem;
-        //     bottom: 2.5rem;
-        //   }
-        // }
+        
         &:hover .btn_site {
           opacity: 1;
         }
@@ -152,25 +145,25 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, .65);
-  z-index: 999;
+  z-index: 99;
   .modal__content { 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 96%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 3rem auto;
     background: $dark-color;
     border-radius: 10px;
-    padding: 3.5rem;
+    padding: 3rem 2rem;
     box-sizing: border-box;
     color: #fff;
     text-align: left;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5);
     h3 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: 500;
-      margin: 2rem 0;
+      margin: 1rem 0;
       color: #fff;
       text-align: center;
     }
@@ -188,7 +181,7 @@
         padding-top: 1.5rem;
         dt {
           position: relative;
-          font-size: 1.4rem;
+          font-size: 1.2rem;
           padding-left: .8rem;
           &::after {
             display: block;
@@ -213,40 +206,41 @@
     }
     .btn__site {
       margin-top: 2rem;
+      text-align: right;
       a {
         display: inline-block;
         text-align: left;
         margin:0 0.5rem;
-        padding: 0 0.5rem;
-        line-height: 3.5rem;
+        padding: 0 2rem;
+        line-height: 3rem;
         border: 1px solid #fff;
         color: #fff;
         border-radius: 5rem;  
-        font-size: 1.2rem;
-        //@include arrow-icon();
-      }
-    }
-  }
-}
-
-
-@media (max-width: 768px) {
-  .modal__popup {
-    .modal__content {
-      width: 90%;
-      .btn__site {
-        a {
-          margin:0 0.5rem;
-          //@include arrow-icon();
-          span {
-            margin-left: 3.5rem;
-          }
+        font-size: 1rem;
+        span {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        svg {
+          width: 1.5rem;
+          height: 1.5rem;
+          margin-right: 0.5rem;
+          vertical-align: middle;
         }
       }
     }
   }
 }
 
+
+@media (min-width: 768px) {
+  
+  .modal__popup {
+    .modal__content {
+      padding: 3rem;
+    }
+  }
+}
 
 @media (min-width: 992px) {
   .proj__wrapper {
@@ -257,14 +251,14 @@
       gap: 20px;
       .proj__box {
         width: 50%;
+        
       }
     }
   } 
-
   .modal__popup {
     .modal__content {
-      width: 80rem;
-      height: 50rem;
+      padding: 3rem 3.5rem;
     }
-  } 
-}
+  }
+} 
+

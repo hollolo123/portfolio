@@ -1,7 +1,7 @@
 @use './import/_variables' as *;
 @forward '@/assets/font/font';  
 
-html { font-size: 14px; }
+html { font-size: 10px; }
 
 body {
   font: {
@@ -73,7 +73,9 @@ h4 { font-size: 1.4rem;}
   height: 100%;
 }
 
-
+@media all and (min-width: 768px) {
+  body { font-size: 1.6rem; }
+}
 
 /* inner */
 @media all and (min-width: 1280px) {

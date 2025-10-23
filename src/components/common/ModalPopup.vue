@@ -19,12 +19,12 @@
       </div>
       <div class="btn__site">
         <a :href="modalData.github" target="_blank" >
+          <font-awesome-icon icon="fa-brands fa-github" />
           <span>깃허브</span>
-          <span class="arr-icon1"></span>
         </a>
         <a :href="modalData.url" target="_blank">
+          <font-awesome-icon icon="fa-solid fa-check-to-slot" />
           <span>사이트</span>
-          <span class="arr-icon1"></span>
         </a>
       </div>
     </div>
@@ -32,8 +32,11 @@
 </template>
 
 <script>
-
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 export default {
+  components: {
+    FontAwesomeIcon
+  },
   props: {
     modalData: {
       type: Object,
