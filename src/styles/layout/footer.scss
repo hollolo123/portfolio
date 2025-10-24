@@ -1,0 +1,12 @@
+@use '@/styles/common/import/variables' as *;
+
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color:#3D7CDE;
+  color: $dark-color;
+  border-top: 1px solid #252525;
+  p {
+    font-size: 1.2rem;
+  }
+}

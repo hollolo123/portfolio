@@ -1,0 +1,54 @@
+@use '@/styles/layout/layout.scss';
+@use '@/styles/common/import/_variables' as *;
+
+#aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &.circle {
+    background: radial-gradient(circle at center, #7e7a6f 0%, #1c1c1f 30%);
+    background-position: center center;
+    // background-size: 300% 300%;
+    animation: gradient 10s ease-in-out infinite;
+    @keyframes gradient {
+      0% {
+        background-size: 100% 100%;
+      }
+      25% {
+        background-size: 300% 300%;
+      }
+      50% {
+        background-size: 100% 100%;
+      }
+      65% {
+        background-size: 110% 110%;
+      }
+      75% {
+        background-size: 80% 80%;
+      }
+      85% {
+        background-size: 110% 110%;
+      }
+      100% {
+        background-size: 100% 100%;
+      }
+    }
+    
+  }
+  .aboutme__text {
+    text-align: center;
+    color: $beige-color;
+    opacity: 0.9;
+    padding: 0 5rem;
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width:1400px) {
+  #aboutme {
+    .aboutme__text {
+      font-size: 3.6rem;
+      }
+    }
+}

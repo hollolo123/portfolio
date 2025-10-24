@@ -113,7 +113,7 @@
           .btn_site {
             position: absolute;
             bottom: 2.5rem;
-            right: 2rem;
+            right: 3rem;
             font-size: 1.2rem;
             color: #fff;
             opacity: .5;
@@ -127,7 +127,6 @@
             
           }
         }
-        
         &:hover .btn_site {
           opacity: 1;
         }
@@ -152,10 +151,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    margin: 3rem auto;
+    margin: 0 auto;
     background: $dark-color;
     border-radius: 10px;
-    padding: 3rem 2rem;
+    padding: 3rem;
     box-sizing: border-box;
     color: #fff;
     text-align: left;
@@ -181,7 +180,7 @@
         padding-top: 1.5rem;
         dt {
           position: relative;
-          font-size: 1.2rem;
+          font-size: 1.6rem;
           padding-left: .8rem;
           &::after {
             display: block;
@@ -196,7 +195,7 @@
           }
         }
         dd {
-          font-size: 1.2rem;
+          font-size: 1.4rem;
           font-weight: 400;
           opacity: .6;
           margin: 1.5rem 0;
@@ -211,12 +210,12 @@
         display: inline-block;
         text-align: left;
         margin:0 0.5rem;
-        padding: 0 2rem;
-        line-height: 3rem;
+        padding: 0 2.5rem;
+        line-height: 3.5rem;
         border: 1px solid #fff;
         color: #fff;
         border-radius: 5rem;  
-        font-size: 1rem;
+        font-size: 1.2rem;
         span {
           display: inline-block;
           vertical-align: middle;
@@ -232,12 +231,11 @@
   }
 }
 
-
 @media (min-width: 768px) {
-  
   .modal__popup {
     .modal__content {
-      padding: 3rem;
+      max-width: 80rem;
+      padding: 3rem 5rem;
     }
   }
 }
@@ -253,11 +251,6 @@
         width: 50%;
         
       }
-    }
-  } 
-  .modal__popup {
-    .modal__content {
-      padding: 3rem 3.5rem;
     }
   }
 } 

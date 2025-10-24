@@ -10,7 +10,7 @@ section {
     color: #e4e4e4;
   }
   .contents {
-    padding: 2rem 1rem;
+    padding: 7rem 1rem;
     box-sizing: border-box;
     .title {
       font-size: 1.6rem;
@@ -34,14 +34,3 @@ section {
   z-index:10;
 }
 
-
-.footer {
-  text-align: center;
-  padding: 1rem 0;
-  background-color:#3D7CDE;
-  color: $dark-color;
-  border-top: 1px solid #252525;
-  p {
-    font-size: 1rem;
-  }
-}

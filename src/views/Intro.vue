@@ -32,7 +32,7 @@
 </script>
 
 <style lang="scss">
-  @use '@/styles/layout/intro' as *;
+  @use '@/styles/sections/intro' as *;
   @use '@/styles/layout/layout' as *;
 
 </style>

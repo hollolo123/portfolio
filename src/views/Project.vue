@@ -72,7 +72,7 @@
 import Title from '@/components/common/TitleComp.vue';
 import ModalPopup from '@/components/common/ModalPopup.vue';
 import projectData from '@/data/project/project.js';
-import '@/styles/layout/project.scss';
+import '@/styles/sections/project.scss';
 
 export default {
   data() {

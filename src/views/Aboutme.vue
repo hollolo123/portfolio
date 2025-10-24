@@ -1,5 +1,5 @@
 <template>
-  <section id="aboutme" class="dark">
+  <section id="aboutme" class="dark circle">
     <div class="contents">
       <p class="aboutme__text">
         디자인과 개발을 유기적으로 연결하며
@@ -17,5 +17,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use '@/styles/layout/aboutme' as *;
+@use '@/styles/sections/aboutme' as *;
 </style>

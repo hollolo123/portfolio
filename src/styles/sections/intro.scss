@@ -100,7 +100,15 @@
   .main__title {
     p {
       font-size: 13rem;
-      line-height: 1;
     }
   }
 }
+
+@media (min-width:1400px) {
+  .main__title {
+    p {
+      font-size: 16rem;
+    }
+  }
+}
+

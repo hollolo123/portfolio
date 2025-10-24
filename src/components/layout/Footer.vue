@@ -11,5 +11,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @use '@/styles/layout/layout' as *;
+  @use '@/styles/layout/footer' as *;
 </style>
