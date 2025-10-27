@@ -8,10 +8,7 @@
     </div> -->
     <div class="contents">
       <div class="main__title">
-        <p>FRONTEND</p> 
-        <p>DEVELOPER</p>
-        <p>&</p>
-        <p>UI/UX DESIGNER</p>
+        <p>{{ typedText }}</p>
         <!-- <span class="cursor">|</span> -->
         <!-- <p class="text">
           안녕하세요.<br/>
@@ -27,7 +24,16 @@
 </template>
 
 <script>
-  
+  export default {
+    setup() {
+      const typedText = ref('');
+      const text = 'FRONTEND DEVELOPER & UI/UX DESIGNER';
+      const i = 0;
+      return {
+        typedText,
+      }
+    }
+  }
 
 </script>
 

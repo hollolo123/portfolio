@@ -12,6 +12,7 @@
   import Main from './views/Main.vue';
   import Footer from './components/layout/Footer.vue';
   import TopBtnComp from './components/common/TopBtnComp.vue';
+  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
   import 'primeicons/primeicons.css';
 
   export default {
@@ -19,7 +20,8 @@
       Header,
       Main,
       Footer,
-      TopBtnComp
+      TopBtnComp,
+      FontAwesomeIcon
     }
   }
 </script>

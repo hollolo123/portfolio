@@ -9,29 +9,23 @@
   &.circle {
     background: radial-gradient(circle at center, #7e7a6f 0%, #1c1c1f 30%);
     background-position: center center;
-    // background-size: 300% 300%;
-    animation: gradient 10s ease-in-out infinite;
+    animation: gradient 15s ease-in-out infinite;
     @keyframes gradient {
       0% {
         background-size: 100% 100%;
       }
       25% {
-        background-size: 300% 300%;
+        background-size: 150% 150%;
       }
-      50% {
-        background-size: 100% 100%;
-      }
-      65% {
-        background-size: 110% 110%;
-      }
-      75% {
-        background-size: 80% 80%;
+      55% {
+        background-size: 120% 120%;
       }
       85% {
-        background-size: 110% 110%;
+        background-size: 300% 300%;
       }
       100% {
         background-size: 100% 100%;
+        
       }
     }
     
