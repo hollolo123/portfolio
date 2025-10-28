@@ -15,7 +15,9 @@
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "primeicons": "^7.0.0",
     "vue": "^3.5.21",
-    "vue-fullpage.js": "^0.2.22"
+    "vue-fullpage.js": "^0.2.22",
+    "vue-hangul-typing": "^1.0.2",
+    "vue-typer": "^1.2.0"
   },
   "devDependencies": {
     "@fortawesome/vue-fontawesome": "^3.1.2",

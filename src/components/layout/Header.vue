@@ -55,7 +55,8 @@ export default {
         this.isActive = false;
         document.body.classList.remove('open');
       }
-    }
+    },
+
   },
   /* scroll event 등록 */
   mounted() {
