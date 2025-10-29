@@ -34,9 +34,9 @@
               <div class="item" >
                 <a
                   :href="project.popup"
-                  @click="$emit('changePopState', project); $emit('close', false)"
+                  @click="changePopState(project.id)" 
                   class="proj__item-link"
-                >
+                > 
                   <div class="proj__thumbnail">
                     <img :src="project.thumbnail" :alt="project.name">
                   </div>
@@ -48,7 +48,7 @@
                       <span v-for="keyword in project.keyword" 
                       :key="keyword">{{ keyword }}</span>
                     </div>
-                    <div  class="btn_site">
+                    <div class="btn_site">
                       <span>Show Project</span>
                       <span class="arr-icon1"></span>
                     </div>
@@ -57,7 +57,7 @@
               </div>
             </div>
           </div>
-          <!-- <ModalPopup v-if="popState" @close="changePopState()" :modalData="modalData" />         -->
+          
         </div>
       </div>
     </div>
@@ -66,7 +66,7 @@
 
 <script>
 import Title from '@/components/common/TitleComp.vue';
-import projectData from '@/data/project/project.js';
+import projectData from '@/data/project/project.js'; 
 import '@/styles/sections/project.scss';
 
 export default {
@@ -74,36 +74,19 @@ export default {
     return {
       projectData,
       selectedTpye : 'all',
-      //popState : false,
-      //modalData : []
     }
   },
   components: {
     Title,
-    // ModalPopup
+
   },
   emits : [
-    'changePopState',
-    'close'
+    'change-state',
   ],
   methods : {
-    // changePopState(project) {
-    //   this.popState = !this.popState;
-    //   if (project) {
-    //     this.modalData = project;
-        
-    //     // 모달창 열렸을 때 스크롤 바 hidden
-    //     document.body.style.overflow = 'hidden';  
-    //     // TopBtn 숨기기
-    //     document.getElementById('topBtn').classList.add('hide');
-    //     } 
-    //     // 닫혔을때 auto
-    //     else {
-    //       document.body.style.overflow = 'auto';
-    //       // TopBtn 보이기
-    //       document.getElementById('topBtn').classList.remove('hide');
-    //     } 
-    // },
+    changePopState(id) {
+      this.$emit('change-state', projectData[id - 1]);
+    }
   },
   computed : {
     filterTab() {

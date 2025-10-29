@@ -12,6 +12,7 @@
 
 - comment.vue 
   - btn css 수정
+
   ```scss
   svg {
     display: inline-block;
@@ -23,37 +24,28 @@
     transition: .5s;
   }
   ```
+  # ModalPopup 
+    - 최상위에 있어야 함.
+    - 이벤트함수 - props 못넘김 - emit으로 넘김 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- 데이터 가공할 경우
+```
+methods : {
+  changePopState(id) {
+      this.$emit('change-state', getData);
+    },
+  getId(id) {
+    return id
+  }
+}
+computed : {
+  getData() {
+    return this.projectData.filter(project => project.id === id)
+  }
+}
+```
 
 
 

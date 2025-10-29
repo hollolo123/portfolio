@@ -2,7 +2,7 @@
   <div class="modal__popup">
     <div class="modal__content">
       <h3>{{ this.modalData.name }}</h3>
-      <button @click="closePopup()" class="btn__close">
+      <button @click="changePopState" class="btn__close">
         <span class="pi pi-times"></span>
       </button>
       <div class="detail_view">
@@ -63,12 +63,11 @@ export default {
     }
   },
   emits : [
-    'changePopState',
-    'close'
+    'change-state'
   ],
   methods : {
-    closePopup() {
-      this.$emit('close', false);
+    changePopState() {
+      this.$emit('change-state', []);
     }
   }
 }

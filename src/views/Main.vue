@@ -3,7 +3,9 @@
     <Intro />
     <Aboutme />
     <Experience />
-    <Project />
+    <Project 
+      @change-state="changePopState"
+    />
     <Comment />
   </div>
 </template>
@@ -23,7 +25,14 @@ export default {
     Project,
     Comment
   },
-  
+  emits : [
+    'change-state',
+  ], 
+  methods : {
+    changePopState(project) {
+      this.$emit('change-state', project) // 매개변수
+    }
+  }
 }
 </script>
 
