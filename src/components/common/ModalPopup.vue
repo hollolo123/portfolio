@@ -9,10 +9,27 @@
         <dl>
           <dt>소개</dt>
           <dd>{{ this.modalData.descintro}}</dd>
-          <dt>주요 기능 및 특징</dt>
-          <dd>{{ this.modalData.descfeature }}</dd>
+          <dt>상세내용</dt>
+          <dd v-for="feature in features" :key="feature">{{ feature }}</dd>
           <dt>사용 기술 및 언어</dt>
-          <dd>{{ this.modalData.desctech }}</dd>
+          <dd>
+            <dl>
+              <dt>
+                Frontend
+              </dt>
+              <dd>
+                {{ this.modalData.desctech?.frontend }}
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                Tools
+              </dt>
+              <dd>
+                {{ this.modalData.desctech?.tools }}
+              </dd>
+            </dl>
+          </dd>
           <dt>첨부파일</dt>
           <dd>{{ this.modalData.file }}</dd>
         </dl>
@@ -34,12 +51,21 @@
 <script>
 
 export default {
+  data() {
+    return {
+      features : this.modalData?.descfeature
+    }
+  },
   props: {
     modalData: {
       type: Object,
       required: true
     }
   },
+  emits : [
+    'changePopState',
+    'close'
+  ],
   methods : {
     closePopup() {
       this.$emit('close', false);

@@ -1,5 +1,62 @@
 # Portfolio 
 
+# 2025-10-29 수정
+- project.js data type 수정 
+  - 배열데이터 : v-for 사용 수정 후 문자열 데이터 사용
+- ModalPopup.vue 수정
+  - router-link -> a 태그 수정 (라우터 정의되지 않음)
+  - ModalPopup.vue 전역으로 빼서 사용
+    - App에서 import, components 등록, 상태 정의
+    - 상태 : modalData, popState, @click
+    - Project.vue -> emit으로 정의
+
+- comment.vue 
+  - btn css 수정
+  ```scss
+  svg {
+    display: inline-block;
+    width: 0;
+    height: 1.6rem;
+    vertical-align: middle;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+  }
+  ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Intro :: typing 
 ```
 setup() {

@@ -26,7 +26,17 @@ const projectData = [
     thumbnail: proj_img02,
     description : "팀 프로젝트로 진행한 리뉴얼 사이트입니다.",
     url: "https://renewal-cezanne.vercel.app/",
-    github : "https://github.com/JeongJae1203/renewal-cezanne"
+    github : "https://github.com/JeongJae1203/renewal-cezanne",
+
+    descintro : "팀 프로젝트로 대전세잔직업전문학교 홈페이지 리뉴얼을 진행했습니다. \n HTML과 CSS를 사용하여 반응형 웹 사이트를 구현했습니다. ",
+    descfeature : [
+      "1. 메인디자인", "2. 서브디자인", "3. 메뉴바", "4. 푸터"
+    ],
+    desctech : {
+      frontend :"Javascipt, HTML5, SCSS",
+      tools : "Parcel Bundler, Github, Vercel, Pigma"
+    },
+    file : "file",
   },
   {
     id : 3,

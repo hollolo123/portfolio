@@ -32,9 +32,10 @@
               :key="project.id" 
               class="proj__box">
               <div class="item" >
-                <router-link 
-                  :to="project.popup"
-                  @click="changePopState(project)"
+                <a
+                  :href="project.popup"
+                  @click="$emit('changePopState', project); $emit('close', false)"
+                  class="proj__item-link"
                 >
                   <div class="proj__thumbnail">
                     <img :src="project.thumbnail" :alt="project.name">
@@ -47,21 +48,16 @@
                       <span v-for="keyword in project.keyword" 
                       :key="keyword">{{ keyword }}</span>
                     </div>
-                    <button class="btn_site">
-                      <router-link 
-                        :to="project.url"
-                        target="_blank"
-                      >
-                        <span>Show Project</span>
-                        <span class="arr-icon1"></span>
-                      </router-link>
-                    </button>
+                    <div  class="btn_site">
+                      <span>Show Project</span>
+                      <span class="arr-icon1"></span>
+                    </div>
                   </div>
-                </router-link>
+                </a>
               </div>
             </div>
           </div>
-          <ModalPopup v-if="popState" @close="changePopState()" :modalData="modalData" />        
+          <!-- <ModalPopup v-if="popState" @close="changePopState()" :modalData="modalData" />         -->
         </div>
       </div>
     </div>
@@ -70,7 +66,6 @@
 
 <script>
 import Title from '@/components/common/TitleComp.vue';
-import ModalPopup from '@/components/common/ModalPopup.vue';
 import projectData from '@/data/project/project.js';
 import '@/styles/sections/project.scss';
 
@@ -79,32 +74,36 @@ export default {
     return {
       projectData,
       selectedTpye : 'all',
-      popState : false,
-      modalData : null
+      //popState : false,
+      //modalData : []
     }
   },
   components: {
     Title,
-    ModalPopup
+    // ModalPopup
   },
+  emits : [
+    'changePopState',
+    'close'
+  ],
   methods : {
-    changePopState(project) {
-      this.popState = !this.popState;
-      if (project) {
-        this.modalData = project;
+    // changePopState(project) {
+    //   this.popState = !this.popState;
+    //   if (project) {
+    //     this.modalData = project;
         
-        // 모달창 열렸을 때 스크롤 바 hidden
-        document.body.style.overflow = 'hidden';  
-        // TopBtn 숨기기
-        document.getElementById('topBtn').classList.add('hide');
-        } 
-        // 닫혔을때 auto
-        else {
-          document.body.style.overflow = 'auto';
-          // TopBtn 보이기
-          document.getElementById('topBtn').classList.remove('hide');
-        } 
-    },
+    //     // 모달창 열렸을 때 스크롤 바 hidden
+    //     document.body.style.overflow = 'hidden';  
+    //     // TopBtn 숨기기
+    //     document.getElementById('topBtn').classList.add('hide');
+    //     } 
+    //     // 닫혔을때 auto
+    //     else {
+    //       document.body.style.overflow = 'auto';
+    //       // TopBtn 보이기
+    //       document.getElementById('topBtn').classList.remove('hide');
+    //     } 
+    // },
   },
   computed : {
     filterTab() {
