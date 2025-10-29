@@ -4,7 +4,7 @@
     <Aboutme />
     <Experience />
     <Project 
-      @change-state="changePopState"
+      @change-modal-state="changeModalState"
     />
     <Comment />
   </div>
@@ -26,11 +26,11 @@ export default {
     Comment
   },
   emits : [
-    'change-state',
+    'change-modal-state',
   ], 
   methods : {
-    changePopState(project) {
-      this.$emit('change-state', project) // 매개변수
+    changeModalState(project) {
+      this.$emit('change-modal-state', project) // 매개변수
     }
   }
 }

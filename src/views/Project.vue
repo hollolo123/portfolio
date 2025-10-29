@@ -34,7 +34,7 @@
               <div class="item" >
                 <a
                   :href="project.popup"
-                  @click="changePopState(project.id)" 
+                  @click="changeModalState(project.id)" 
                   class="proj__item-link"
                 > 
                   <div class="proj__thumbnail">
@@ -81,11 +81,11 @@ export default {
 
   },
   emits : [
-    'change-state',
+    'change-modal-state',
   ],
   methods : {
-    changePopState(id) {
-      this.$emit('change-state', projectData[id - 1]);
+    changeModalState(id) {
+      this.$emit('change-modal-state', projectData[id - 1]);
     }
   },
   computed : {
@@ -95,8 +95,7 @@ export default {
       }
       return this.projectData.filter(proj => proj.type === this.selectedTpye);
     }
-  }
-  
+  } 
 }
 </script>
 

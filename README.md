@@ -7,7 +7,7 @@
   - router-link -> a 태그 수정 (라우터 정의되지 않음)
   - ModalPopup.vue 전역으로 빼서 사용
     - App에서 import, components 등록, 상태 정의
-    - 상태 : modalData, popState, @click
+    - 상태 : modalData, isModalOpen, @click
     - Project.vue -> emit으로 정의
 
 - comment.vue 
@@ -24,9 +24,47 @@
     transition: .5s;
   }
   ```
-  # ModalPopup 
+ # ModalPopup 
     - 최상위에 있어야 함.
     - 이벤트함수 - props 못넘김 - emit으로 넘김 
+
+# project data 가져오기
+1. Project.vue 에서 project.js import
+2. @click="changeModalState(project.id)"
+    클릭시 project.id 전달 
+3. project.js에서 해당 프로젝트 객체 찾아서 emit
+```
+  changeModalState(id) {
+    this.$emit('change-modal-state', projectData[id - 1]);
+  }
+```
+=> projectData[id - 1]로 해당 프로젝트 객체를 찾아 이벤트와 함께 전달 
+4. 이벤트가 상위 컴포넌트로 전파 
+Main.vue
+```
+    changeModalState(project) {
+      this.$emit('change-modal-state', project) 
+    }
+```
+5. App에서 최종적으로 받음 
+```
+changeModalState(project) {
+  this.modalData = project;
+}
+```
+changeModalState(project)에서 project 매개변수로 받는다.
+
+# 핵심 포인트
+App.vue의 project 매개변수는 직접 project.js를 가져오지 않습니다. 대신:
+- Project.vue에서 projectData[id - 1]로 찾은 객체를
+- $emit으로 전달하고
+- 이벤트가 상위로 전파되어
+- App.vue의 changeModalState(project) 메서드의 매개변수로 전달됩니다.
+
+즉, 컴포넌트 간 이벤트 전파로 데이터가 전달됩니다.
+
+
+
 
 
 

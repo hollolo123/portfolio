@@ -1,12 +1,12 @@
 <template>
   <div id="wrap">
     <ModalPopup 
-      v-if="popState" 
-      @change-state="changePopState"
+      v-if="isModalOpen" 
+      @change-modal-state="changeModalState"
       :modalData="modalData" 
     />
     <Header />
-    <Main @change-state="changePopState" />
+    <Main @change-modal-state="changeModalState" />
     <Footer />
     <TopBtnComp />
   </div>
@@ -18,7 +18,6 @@
   import Main from './views/Main.vue';
   import Footer from './components/layout/Footer.vue';
   import TopBtnComp from './components/common/TopBtnComp.vue';
-  import projectData from '@/data/project/project.js';
   import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
   import 'primeicons/primeicons.css';
 
@@ -34,22 +33,21 @@
 
     data() {
       return {
-        projectData,
-        popState : false,
+        isModalOpen : false,
         modalData : []
       }
     },
 
     methods : {
       /**
-       * changePopState Modal 상태 변경 관련 함수
-       * @description Modal popState에 따라 Modal이 열리고 닫는 기능
+       * changeModalState Modal 상태 변경 관련 함수
+       * @description Modal isModalOpen 따라 Modal이 열리고 닫는 기능
        * @param project 
        */
-      changePopState(project) {
-        this.popState = !this.popState;
+      changeModalState(project) {
+        this.isModalOpen = !this.isModalOpen;
 
-        if(this.popState) {   
+        if(this.isModalOpen) {   
           this.modalData = project;
 
           // 모달창 열렸을 때 스크롤 바 hidden
