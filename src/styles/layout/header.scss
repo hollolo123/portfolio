@@ -16,7 +16,7 @@ header {
     transition: all 0.3s ease;
     /* scrolled class 추가 시 적용 */
     &.scrolled {
-      background: rgb(241, 231, 206,.8);
+      background: rgb(241, 231, 206,.7);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
     }
@@ -86,7 +86,7 @@ header {
               color: $white-color;
               padding: 0 3rem;
               line-height: 5rem;
-              font-size: 1.6rem;
+              font-size: 1.8rem;
               color: $beige-color;
               &:hover {
                 background: rgb(241, 231, 206,.05);
@@ -100,7 +100,7 @@ header {
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   header {
     #header {
       .header__in {
@@ -110,7 +110,7 @@ header {
           }
         }
         .gnb {
-          height: 6rem;
+          height: 5rem;
           .gnb__btn {
             display: none;
           }
@@ -118,24 +118,30 @@ header {
             display: flex;
             position: relative;
             width: 100%;
-            top: 1rem;
+            top: 0;
             flex-direction: row;
             align-items: center;
             height:5rem;
             background: transparent;
             li {
               text-align: center;
-              span {
-                display: inline;
-                background: transparent;
-                color: $dark-color;
-                transition: .2s;
-                cursor: pointer;
-                &:hover {
-                  border-bottom: 4px solid $dark-color;
-                  padding-bottom: 1.3rem;
+              a {
+                display: inline-block;
+                span {
+                  display: inline-block;
+                  height: 5rem;
+                  position: relative;
                   background: transparent;
-                  color: #000;
+                  color: $dark-color;
+                  transition: .2s;
+                  cursor: pointer;
+                  &:hover {
+                    border-bottom: 4px solid $dark-color;
+                    padding:0 0 0.3rem 0;
+                    background: transparent;
+                    color: #000;
+                    box-sizing: border-box;
+                  }
                 }
               }
             }

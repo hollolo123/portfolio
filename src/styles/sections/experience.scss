@@ -10,8 +10,8 @@
     text-align: left;
     font-size: 2.2rem;
     font-weight: normal;
-    color:#fff;
-    opacity: 0.8;
+    color:#bdb6a7;
+    
   } 
   .exp__wrap {
     display: flex;
@@ -49,6 +49,7 @@
       font-size: 1.6rem;
       margin: 2rem 0;
       opacity: .9;
+
     }
     .icon {
       margin: 3rem 0;
@@ -61,14 +62,16 @@
       }
     }
     .date {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       opacity: 0.6;
     }
     .txt {
       margin-top: 2.5rem;
       opacity: 0.8;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       font-weight: normal;
+      word-break: keep-all;
+      
       > ul {
         > li {
         position: relative;
@@ -99,9 +102,7 @@
 @media (min-width: 768px) {
   .exp__wrapper {
     .exp__wrap {
-      flex-direction:row;
       .exp__box {
-        width: 50%;
         .skill {
           margin: 2rem 0;
         }
@@ -114,8 +115,12 @@
 @media (min-width: 992px) {
   .exp__wrapper {
     .exp__wrap {
+      flex-direction:row;
       .exp__box {
         width: 33.33%;
+        .skill {
+          min-height: 5rem;
+        }
       }
     }
   }
@@ -124,8 +129,10 @@
 @media (min-width: 1200px) {
   .exp__wrapper {
     .exp__wrap {
-      .skill {
-        margin: 2rem 5rem;
+      .exp__box {
+        .skill {
+          min-height:auto;
+        }
       }
     }
   }

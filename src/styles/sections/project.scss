@@ -163,7 +163,7 @@
     text-align: left;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5);
     h3 {
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-weight: 500;
       margin: 1rem 0;
       color: #fff;
@@ -199,17 +199,17 @@
         dd {
           font-size: 1.4rem;
           font-weight: 300;
-          opacity: .7;
+          opacity: .8;
           margin: 1.5rem 0;
           padding-left: .8rem;
           white-space : pre-line;
           > dl {
-            display: flex;
             padding: 0 0 0.5rem 0;
             dt {
+              position: relative;
               font-size: 1.4rem;
               min-width: 8.5rem;
-              position: relative;
+              margin: 1rem;
               &::after {
                 display: block;
                 content: '';
@@ -223,7 +223,22 @@
               }
             }
             dd {
+              position: relative;
               margin: 0;
+              svg {
+                padding-right: 0.8rem;
+              }
+              span.label {
+                display: inline-block;
+                font-size: 1.2rem;
+                background: #3a4052;
+                color: #fff;
+                opacity: .8;
+                padding: 0.5rem 1rem;
+                border-radius: 0.3rem;
+                margin-right: 0.5rem;
+                margin-bottom: 0.5rem; 
+              }
             }
           }   
         }

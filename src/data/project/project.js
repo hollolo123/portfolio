@@ -9,14 +9,23 @@ const projectData = [
     name : "포트폴리오",
     type : "personal",
     keyword : ["Vue.js", "SCSS", "Vite", "Vercel"],
-    description : "포트폴리오 사이트 입니다.",
+    description : "포트폴리오 프로젝트 입니다.",
     thumbnail: proj_img01,
     url : "https://surimpark.vercel.app/",
     github : "https://github.com/hollolo123/portfolio",
-    descintro : "기획부터 디자인 총괄 작업 하였습니다.",
-    descfeature : "주요 기능 및 특징 기재",
-    desctech : "Vue.js, HTML5, SCSS",
-    file : "file",
+    descintro : "Vue.js를 사용하여 구현한 포트폴리오 프로젝트 입니다.",
+    descfeature : [
+      "Vue.js 프레임워크를 사용하여 구현",
+      "디자인 및 반응형 퍼블리싱을 구현", 
+      "Vite 번들러를 사용하여 번들링", 
+      "Vercel 호스팅 서비스를 사용하여 배포", 
+      "Github 저장소를 사용하여 코드 관리", 
+      "Pigma 디자인 툴을 사용하여 디자인 작업", 
+    ],
+    desctech : {
+      frontend :["Vue.js", "HTML5", "SCSS"],
+      tools : ["Vite", "Vercel", "Github", "Pigma"]
+    },
   },
   {
     id : 2,
@@ -27,16 +36,16 @@ const projectData = [
     description : "팀 프로젝트로 진행한 리뉴얼 사이트입니다.",
     url: "https://renewal-cezanne.vercel.app/",
     github : "https://github.com/JeongJae1203/renewal-cezanne",
-
     descintro : "팀 프로젝트로 대전세잔직업전문학교 홈페이지 리뉴얼을 진행했습니다. \n HTML과 CSS를 사용하여 반응형 웹 사이트를 구현했습니다. ",
     descfeature : [
-      "1. 메인디자인", "2. 서브디자인", "3. 메뉴바", "4. 푸터"
+      "메인 디자인 및 퍼블리싱", 
+      "반응형 디자인 및 퍼블리싱", 
+      "Swiper를 사용하여 슬라이더 구현", 
     ],
     desctech : {
-      frontend :"Javascipt, HTML5, SCSS",
-      tools : "Parcel Bundler, Github, Vercel, Pigma"
+      frontend :["Javascipt", "HTML5", "SCSS"],
+      tools : ["Parcel Bundler", "Github", "Vercel", "Pigma"]
     },
-    file : "file",
   },
   {
     id : 3,
@@ -46,7 +55,17 @@ const projectData = [
     thumbnail : proj_img03,
     description : "리뉴얼 사이트를 Vue.js를 사용하여 만들었습니다.",
     url : "https://cezanne-vue.vercel.app/",
-    github : "https://github.com/hollolo123/cezanne_vue"
+    github : "https://github.com/hollolo123/cezanne_vue",
+    descintro : "Vue.js를 사용하여 대전세잔직업전문학교 홈페이지 리뉴얼을 진행했습니다. \n Vue.js를 사용하여 반응형 웹 사이트를 구현했습니다. ",
+    descfeature : [
+      "메인 디자인 및 퍼블리싱", 
+      "반응형 디자인 및 퍼블리싱", 
+      "Swiper를 사용하여 슬라이더 구현", 
+    ],
+    desctech : {
+      frontend :["Vue.js", "HTML5", "SCSS"],
+      tools : ["Parcel Bundler", "Github", "Vercel", "Pigma"]
+    },
   }
 ]
 

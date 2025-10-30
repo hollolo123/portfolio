@@ -10,7 +10,13 @@
           <dt>소개</dt>
           <dd>{{ this.modalData.descintro}}</dd>
           <dt>상세내용</dt>
-          <dd v-for="feature in features" :key="feature">{{ feature }}</dd>
+          <dd>
+            <dl>
+              <dd v-for="feature in features" :key="feature">
+                <p><font-awesome-icon icon="fa-solid fa-check" />{{ feature }}</p>
+              </dd>
+            </dl>
+          </dd>
           <dt>사용 기술 및 언어</dt>
           <dd>
             <dl>
@@ -18,7 +24,9 @@
                 Frontend
               </dt>
               <dd>
-                {{ this.modalData.desctech?.frontend }}
+                <span v-for="stack in frontendStacks" :key="stack" class="label">
+                  {{ stack }}     
+                </span>
               </dd>
             </dl>
             <dl>
@@ -26,12 +34,14 @@
                 Tools
               </dt>
               <dd>
-                {{ this.modalData.desctech?.tools }}
+                <span v-for="tool in toolsStacks" :key="tool" class="label">
+                  {{ tool }}
+                </span>
               </dd>
             </dl>
           </dd>
-          <dt>첨부파일</dt>
-          <dd>{{ this.modalData.file }}</dd>
+          <!-- <dt>첨부파일</dt>
+          <dd>{{ this.modalData.file }}</dd> -->
         </dl>
       </div>
       <div class="btn__site">
@@ -53,7 +63,9 @@
 export default {
   data() {
     return {
-      features : this.modalData?.descfeature
+      features : this.modalData?.descfeature,
+      frontendStacks : this.modalData?.desctech.frontend,
+      toolsStacks : this.modalData?.desctech.tools
     }
   },
   props: {

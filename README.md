@@ -64,6 +64,43 @@ App.vue의 project 매개변수는 직접 project.js를 가져오지 않습니�
 즉, 컴포넌트 간 이벤트 전파로 데이터가 전달됩니다.
 
 
+# 2025-10-30
+section 이동 스크립트문 수정  
+- logo 클릭 시 #intro section 이동이 sticky css 문제로 제대로 이동하지 않음 
+  - sticky 기준은 #main__wrap 안에서 스크롤 되니까, 해당 기준으로 스크롤 위치 지정
+  - 해결책 : #main__wrap.offsetTop 지정
+  - if(ele) ===> if(sectionId) 기준으로 변경
+
+```
+const main = document.querySelector('#main__wrap');
+window.scrollTo({
+  top: main.offsetTop,
+  behavior : 'smooth'
+})
+```
+
+=> switch로 바꿔보기 예정 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -36,17 +36,18 @@
         content: '';
         display: block;
         width: 1px;
-        min-height: 4rem;
+        min-height: 5rem;
         background-color: $dark-color;
         position: absolute;
         left: 50%;
-        transform: translateX(-50%) rotate(22deg);
+        transform: translateX(-50%) rotate(35deg);
       }
       p {
         letter-spacing: -0.05rem;
         font-size: 1.6rem;
         text-align: center;
         padding:0 2rem 3.5rem;
+        word-break: keep-all;
       }
       
     }
@@ -54,6 +55,7 @@
       padding-top: 10rem;
       text-align: center;
       font-size: 1.4rem;
+      word-break: keep-all;
       button {
         margin: 2rem 0.5rem;
         border: 1px solid $dark-color;

@@ -28,7 +28,7 @@
           </div>
           <div class="proj__box__wrapper">
             <div 
-              v-for="project in filterTab" 
+              v-for="project in filterData" 
               :key="project.id" 
               class="proj__box">
               <div class="item" >
@@ -89,7 +89,7 @@ export default {
     }
   },
   computed : {
-    filterTab() {
+    filterData() {
       if(this.selectedTpye === 'all') {
         return projectData
       }

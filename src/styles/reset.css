@@ -70,6 +70,9 @@ button {
 	background-color: transparent;
 }
 
+@media (min-width: 1440px) {
+	html { font-size: 12px; }
+}
 @media (max-width: 1024px) {
 	html { font-size: 9px; }
 }

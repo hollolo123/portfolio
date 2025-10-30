@@ -20,8 +20,8 @@
                   <span><img src="@/assets/images/icon/MySQL.svg" alt="MySQL"></span>
                 </li>
                 <li class="txt">
-                  Vue, React등 다양한 프레임워크를<br/> 
-                  활용하여 동적인 효과를 구현 할 수 있습니다.
+                  Vue, React등 다양한 프레임워크를
+                  활용하여 동적인 효과를 구현할 수 있습니다.
                 </li>
               </ul>
             </div>
@@ -35,8 +35,8 @@
                   <span><img src="@/assets/images/icon/Sass.svg" alt="Sass"></span>
                 </li>
                 <li class="txt">
-                  웹표준, 웹접근성을 중심의<br/>
-                  웹 페이지를 구현 할 수 있습니다.
+                  웹표준, 웹접근성을 중심의
+                  웹 페이지를 구현할 수 있습니다.
                 </li>
               </ul>
             </div>
@@ -51,8 +51,8 @@
                   <span><img src="@/assets/images/icon/VsCode.svg" alt="VsCode"></span>
                 </li>
                 <li class="txt">
-                  프로그램의 기본 기능을 전반적으로<br/>
-                  다룰 수 있으며 다양한 도구를 사용하여<br/>
+                  프로그램의 기본 기능을 전반적으로
+                  다룰 수 있으며 다양한 도구를 사용하여
                   디자인을 구현할 수 있습니다.
                 </li>
               </ul>
@@ -79,7 +79,7 @@
             </ExpBoxComp>
             <ExpBoxComp 
               date="2025.04~2025.11" 
-              company="세잔직업전문학교" 
+              company="대전세잔직업전문학교" 
               team="교육 및 훈련" 
               txt1="프론트엔드 개발 과정 교육" 
               txt2="HTML, CSS, JavaScript, Vue, React, Node.js, db등">
