@@ -1,6 +1,6 @@
 <template>
   <div class="modal__popup">
-    <div class="modal__content">
+    <div class="modal__content bg__proj">
       <h3>{{ this.modalData.name }}</h3>
       <button @click="changeModalState" class="btn__close">
         <span class="pi pi-times"></span>

@@ -38,6 +38,7 @@
                   class="proj__item-link"
                 > 
                   <div class="proj__thumbnail">
+                    <p class="proj__desc">{{ project.description }}</p>
                     <img :src="project.thumbnail" :alt="project.name">
                   </div>
                   <div class="proj__title">

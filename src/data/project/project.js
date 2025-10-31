@@ -38,13 +38,16 @@ const projectData = [
     github : "https://github.com/JeongJae1203/renewal-cezanne",
     descintro : "팀 프로젝트로 대전세잔직업전문학교 홈페이지 리뉴얼을 진행했습니다. \n HTML과 CSS를 사용하여 반응형 웹 사이트를 구현했습니다. ",
     descfeature : [
-      "메인 디자인 및 퍼블리싱", 
+      "메인 디자인 및 메인페이지 퍼블리싱", 
       "반응형 디자인 및 퍼블리싱", 
+      "공통 디자인 및 퍼블리싱", 
       "Swiper를 사용하여 슬라이더 구현", 
+      "Github 저장소를 사용하여 코드 관리", 
+      "Pigma 디자인 툴을 사용하여 디자인 작업", 
     ],
     desctech : {
       frontend :["Javascipt", "HTML5", "SCSS"],
-      tools : ["Parcel Bundler", "Github", "Vercel", "Pigma"]
+      tools : ["Parcel Bundler", "Github", "Vercel", "Figma"]
     },
   },
   {
@@ -56,11 +59,12 @@ const projectData = [
     description : "리뉴얼 사이트를 Vue.js를 사용하여 만들었습니다.",
     url : "https://cezanne-vue.vercel.app/",
     github : "https://github.com/hollolo123/cezanne_vue",
-    descintro : "Vue.js를 사용하여 대전세잔직업전문학교 홈페이지 리뉴얼을 진행했습니다. \n Vue.js를 사용하여 반응형 웹 사이트를 구현했습니다. ",
+    descintro : "팀프로젝트로 진행한 대전세잔직업전문학교 리뉴얼 프로젝트를 Vue.js 프레임워크를 사용하여 컴파일 했습니다",
     descfeature : [
-      "메인 디자인 및 퍼블리싱", 
-      "반응형 디자인 및 퍼블리싱", 
-      "Swiper를 사용하여 슬라이더 구현", 
+      "Vue.js 프레임워크를 사용하여 구현",
+      "Vite 번들러를 사용하여 번들링", 
+      "Vercel 호스팅 서비스를 사용하여 배포", 
+      "Github 저장소를 사용하여 코드 관리", 
     ],
     desctech : {
       frontend :["Vue.js", "HTML5", "SCSS"],

@@ -68,6 +68,7 @@ button {
 	appearance: none;
 	cursor: pointer;
 	background-color: transparent;
+	color: inherit;
 }
 
 @media (min-width: 1440px) {

@@ -22,9 +22,9 @@
         </div>
         <div class="commt__sns">
           <p>궁금한 사항은 카카오톡 또는 이메일로 편하게 문의해주세요.</p> 
-          <button type="button" href="#"><font-awesome-icon icon="fa-brands fa-kakao-talk" />kakaoTalk</button>
-          <button type="button" href="#"><font-awesome-icon icon="fa-solid fa-paper-plane" />e-mail</button>
-          <button type="button" href="#"><font-awesome-icon icon="fa-brands fa-github" />github</button>
+          <button type="button" @click="openKakaoTalk()"><font-awesome-icon icon="fa-brands fa-kakao-talk" />kakaoTalk</button>
+          <button type="button" @click="openEmail()"><font-awesome-icon icon="fa-solid fa-paper-plane" />e-mail</button>
+          <button type="button" @click="openGithub()"><font-awesome-icon icon="fa-brands fa-github" />github</button>
         </div>
       </div>
       <!-- Wave container -->
@@ -47,9 +47,19 @@
 </template>
 
 <script>
-export default {
-  name: 'Comment'
-}
+  export default {
+    methods : {
+      openKakaoTalk() {
+        window.open('/', '_blank');
+      },
+      openEmail() {
+        window.open('mailto:hollolo123@gmail.com', '_blank');
+      },
+      openGithub() {
+        window.open('https://github.com/hollolo123', '_blank')
+      }
+    }
+  }
 </script>
 
 <style lang="scss" scoped>
