@@ -30,7 +30,7 @@
           if (i > text.length) {
             clearInterval(interval);
           }
-        },150);
+        },180);
       }
       return {
         displayText
