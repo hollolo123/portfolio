@@ -168,13 +168,14 @@
   height: 100%;
   background: rgba(0, 0, 0, .65);
   z-index: 99;
-  overflow-y:auto;
   .modal__content { 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
+    height: calc(100vh - 4rem);
+    overflow: hidden auto;
     margin: 0 auto;
     background: $dark-color;
     border-radius: 10px;
