@@ -3,6 +3,7 @@ import proj_img02 from '@/assets/images/project/project_img2.jpg';
 import proj_img03 from '@/assets/images/project/project_img3.jpg';
 import proj_img01_detail from '@/assets/images/project/project_img1_detail.jpg';
 import proj_img02_detail from '@/assets/images/project/project_img2_detail.jpg';
+import proj_img03_detail from '@/assets/images/project/project_img3_detail.jpg';
 
 
 const projectData = [
@@ -60,10 +61,11 @@ const projectData = [
     type : "personal",
     keyword : ["Vue.js", "SCSS", "Vite", "Vercel"],
     thumbnail : proj_img03,
+    detailimg : proj_img03_detail,
     description : "리뉴얼 사이트를 Vue.js를 사용하여 만들었습니다.",
     url : "https://cezanne-vue.vercel.app/",
     github : "https://github.com/hollolo123/cezanne_vue",
-    descintro : "팀프로젝트로 진행한 대전세잔직업전문학교 리뉴얼 프로젝트를 Vue.js 프레임워크를 사용하여 컴파일 했습니다",
+    descintro : "팀 프로젝트로 진행한 대전세잔직업전문학교 리뉴얼 사이트를 Vue.js 프레임워크를 사용하여 컴파일 했습니다",
     descfeature : [
       "Vue.js 프레임워크를 사용하여 구현",
       "Vite 번들러를 사용하여 번들링", 
