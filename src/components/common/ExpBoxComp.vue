@@ -1,5 +1,5 @@
 <template>
-  <div class="exp__box">
+  <div class="exp__box" :class="$attrs.class">
     <ul>
       <li class="date">{{ date }}</li>
       <li class="company">{{ company }}</li>
