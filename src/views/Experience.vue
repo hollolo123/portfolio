@@ -148,7 +148,7 @@ export default {
             });
 
             // 한 번만 실행되도록 observer 해제
-            observer.unobserve(entry.target);
+            // observer.unobserve(entry.target);
           }
         });
       }, {

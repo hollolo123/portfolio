@@ -26,11 +26,14 @@
               </li>
             </ul>
           </div>
-          <div class="proj__box__wrapper">
+          <!-- 관찰 대상 요소에 ref 추가가 -->
+          <div ref="projectWrapperRef" class="proj__box__wrapper">
             <div 
-              v-for="project in filterData" 
+              v-for="(project, index) in filterData" 
               :key="project.id" 
-              class="proj__box">
+              :class="['proj__box', {'is-visible' : isSectionVisible}]"
+              :style="{'animation-delay' : isSectionVisible ? index * 0.3 + 's' : '0s'}"
+              >
               <div class="item" >
                 <a
                   :href="project.popup"
@@ -58,7 +61,6 @@
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </div>
@@ -69,6 +71,7 @@
 import Title from '@/components/common/TitleComp.vue';
 import projectData from '@/data/project/project.js'; 
 import '@/styles/sections/project.scss';
+import { ref, onMounted, onUnmounted } from 'vue'; 
 
 export default {
   data() {
@@ -79,7 +82,6 @@ export default {
   },
   components: {
     Title,
-
   },
   emits : [
     'change-modal-state',
@@ -96,10 +98,60 @@ export default {
       }
       return this.projectData.filter(proj => proj.type === this.selectedTpye);
     }
-  } 
+  }, 
+
+  setup() {
+    const projectWrapperRef = ref(null); // wrapper ele 참조할 ref
+    const isSectionVisible = ref(false);  //  섹션 진입 상태
+
+    let observer = null;
+
+    const handleIntersection = (entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          isSectionVisible.value = true;
+          if (observer) {
+            observer.unobserve(entry.target);
+          }
+        }
+      });
+    };
+
+    onMounted(() => {
+      observer = new IntersectionObserver(handleIntersection, {
+        root : null,
+        rootMargin : '0px',
+        threshold : 0.3
+      });
+
+      if (projectWrapperRef.value) {
+        observer.observe(projectWrapperRef.value);
+      }
+    });
+
+    onUnmounted(() => {
+      if (observer && projectWrapperRef.value) {
+        observer.unobserve(projectWrapperRef.value);
+      }
+    });
+
+    return {
+      projectWrapperRef,
+      isSectionVisible
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-
+  .proj__box {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    animation-fill-mode: forwards;
+  }
+  .proj__box.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 </style>

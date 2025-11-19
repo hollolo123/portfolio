@@ -82,7 +82,7 @@ window.scrollTo({
 => switch로 바꿔보기 예정 
 
 
-# [2025-11-18] Experience 섹션이 뷰포트에 들어올 때 exp__box가 순차적으로 나타나도록 구현
+# [2025-11-18] Intersection Observer
 
 1. Intersection Observer로 섹션 감지
 Experience 섹션에 ref="experienceSection" 추가
