@@ -50,7 +50,7 @@
   export default {
     methods : {
       openKakaoTalk() {
-        window.open('/', '_blank');
+        window.open('https://open.kakao.com/o/sGTzApci', '_blank');
       },
       openEmail() {
         window.open('mailto:hollolo123@gmail.com', '_blank');
