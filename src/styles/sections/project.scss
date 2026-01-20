@@ -340,10 +340,11 @@
     .proj__box__wrapper {
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      flex-wrap: wrap;
+      justify-content: flex-start;
       gap: 20px;
       .proj__box {
-        width: calc(100% / 3);
+        width: calc(100% / 3 - 20px);
         
       }
     }

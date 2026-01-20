@@ -1,9 +1,11 @@
 import proj_img01 from '@/assets/images/project/project_img1.jpg';
 import proj_img02 from '@/assets/images/project/project_img2.jpg';
 import proj_img03 from '@/assets/images/project/project_img3.jpg';
+import proj_img04 from '@/assets/images/project/project_img4.jpg';
 import proj_img01_detail from '@/assets/images/project/project_img1_detail.jpg';
 import proj_img02_detail from '@/assets/images/project/project_img2_detail.jpg';
 import proj_img03_detail from '@/assets/images/project/project_img3_detail.jpg';
+import proj_img04_detail from '@/assets/images/project/project_img4_detail.jpg';
 
 
 const projectData = [
@@ -74,6 +76,27 @@ const projectData = [
     ],
     desctech : {
       frontend :["Vue.js", "HTML5", "SCSS"],
+      tools : ["Parcel Bundler", "Github", "Vercel", "Pigma"]
+    },
+  },
+  {
+    id : 4,
+    name : "[React] 대전빵지도",
+    type : "team",
+    keyword : ["React", "SCSS", "Vite", "Vercel"],
+    thumbnail : proj_img04,
+    detailimg : proj_img04_detail,
+    description : "팀 프로젝트로 React를 활용해 제작한 탐색형 웹 서비스입니다.",
+    url : "https://daejeon-bread-map.vercel.app/",
+    github : "https://github.com/sk-y01/daejeon_bread_map",
+    descintro : "대전 지역 빵집 데이터를 기반으로 빵집 탐색이 가능하도록 설계했습니다.",
+    descfeature : [
+      "지도 맵 중심 UI 디자인 및 퍼블리싱",
+      "React 프레임워크를 활용한 화면 구현",  
+      "Github 저장소를 사용하여 코드 관리", 
+    ],
+    desctech : {
+      frontend :["React", "HTML5", "SCSS"],
       tools : ["Parcel Bundler", "Github", "Vercel", "Pigma"]
     },
   }
