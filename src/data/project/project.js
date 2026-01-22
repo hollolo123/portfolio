@@ -86,20 +86,25 @@ const projectData = [
     keyword : ["React", "SCSS", "Vite", "Vercel"],
     thumbnail : proj_img04,
     detailimg : proj_img04_detail,
-    description : "팀 프로젝트로 React를 활용해 제작한 탐색형 웹 서비스입니다.",
+    description : "(진행중) 팀 프로젝트로 React를 활용해 제작한 탐색형 웹 서비스입니다.",
     url : "https://daejeon-bread-map.vercel.app/",
     github : "https://github.com/sk-y01/daejeon_bread_map",
-    descintro : "대전 지역 빵집 데이터를 기반으로 빵집 탐색이 가능하도록 설계했습니다.",
+    descintro :
+      "(진행중) 대전 지역 빵집 데이터를 기반으로 빵집 탐색이 가능하도록 설계했습니다. \n 본 프로젝트는 GitHub Pages의 정적 환경에서 구동되어 API 호출 속도에 제한이 있을 수 있습니다. \n 쾌적한 확인을 위해 로딩 완료까지 잠시만 기다려 주시면 감사하겠습니다.",
     descfeature : [
       "지도 맵 중심 UI 디자인 및 퍼블리싱",
-      "React 프레임워크를 활용한 화면 구현",  
-      "Github 저장소를 사용하여 코드 관리", 
+      "카카오 지도 API를 활용한 지도 맵 구현 ",
+      "빵집 데이터 기반 마커 및 리스트 렌더링",
+      "검색 및 검색 초기화 기능 구현",
+      "마커·리스트 클릭 시 상세 화면 연동",
+      "리스트 보기 / 숨기기 토글 기능 구현",
+      "찜 기능 클릭 시 토스트 메시지 컴포넌트 구현", 
     ],
     desctech : {
       frontend :["React", "HTML5", "SCSS"],
       tools : ["Parcel Bundler", "Github", "Vercel", "Pigma"]
     },
-  }
+  }, 
 ]
 
 export default projectData

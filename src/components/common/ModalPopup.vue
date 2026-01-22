@@ -8,7 +8,9 @@
       <div class="detail_view">
         <dl>
           <dt>소개</dt>
-          <dd>{{ this.modalData.descintro}}</dd>
+          <dd>
+            <p>{{ this.modalData.descintro}}</p>
+          </dd>
           <dt>상세내용</dt>
           <dd>
             <dl>

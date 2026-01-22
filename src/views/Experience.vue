@@ -82,16 +82,16 @@
               company="(주)스마일웹" 
               team="디자인팀" 
               txt1="쇼핑몰 사이트 및 타사 웹 디자인 작업" 
-              txt2="HTML, CSS를 활용해 웹 표준, 웹접근성 중심의 웹 사이트 퍼블리싱">
+              txt2="HTML·CSS 기반의 웹 표준, 웹접근성 중심의 웹 사이트 퍼블리싱">
             </ExpBoxComp>
             <ExpBoxComp 
               ref="expBox5"
               :class="{'fade-in':visibleBoxes.includes(5)}"
               date="2013.05~2024.12" 
               company="(주)누림소프트" 
-              team="디자인팀" 
+              team="운영·유지보수팀" 
               txt1="통계청 나라통계, KOSIS, 국가지표체계 등 다수의 프로젝트 참여" 
-              txt2="HTML, CSS를 활용해 웹 표준, 웹접근성 중심의 웹 사이트 퍼블리싱">
+              txt2="HTML·CSS 기반의 웹 표준, 웹접근성 중심의 웹 사이트 퍼블리싱">
             </ExpBoxComp>
             <ExpBoxComp 
               ref="expBox6"

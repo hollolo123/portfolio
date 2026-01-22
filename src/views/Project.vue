@@ -26,9 +26,10 @@
               </li>
             </ul>
           </div>
-          <!-- 관찰 대상 요소에 ref 추가가 -->
+          <!-- 관찰 대상 요소에 ref 추가 -->
           <div ref="projectWrapperRef" class="proj__box__wrapper">
             <div 
+              v-if="filterData.length > 0"
               v-for="(project, index) in filterData" 
               :key="project.id" 
               :class="['proj__box', {'is-visible' : isSectionVisible}]"
