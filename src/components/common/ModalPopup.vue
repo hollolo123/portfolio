@@ -5,57 +5,67 @@
       <button @click="changeModalState" class="btn__close">
         <span class="pi pi-times"></span>
       </button>
-      <div class="detail_view">
-        <dl>
-          <dt>소개</dt>
-          <dd>
-            <p>{{ this.modalData.descintro}}</p>
-          </dd>
-          <dt>상세내용</dt>
-          <dd>
-            <dl>
-              <dd v-for="feature in features" :key="feature">
-                <p><font-awesome-icon icon="fa-solid fa-check" />{{ feature }}</p>
-              </dd>
-            </dl>
-          </dd>
-          <dt>사용 기술 및 언어</dt>
-          <dd>
-            <dl>
-              <dt>
-                Frontend
-              </dt>
-              <dd>
-                <span v-for="stack in frontendStacks" :key="stack" class="label">
-                  {{ stack }}     
-                </span>
-              </dd>
-            </dl>
-            <dl>
-              <dt>
-                Tools
-              </dt>
-              <dd>
-                <span v-for="tool in toolsStacks" :key="tool" class="label">
-                  {{ tool }}
-                </span>
-              </dd>
-            </dl>
-          </dd>
-        </dl>
-        <div class="btn__site">
-          <a :href="modalData.github" target="_blank" >
-            <font-awesome-icon icon="fa-brands fa-github" />
-            <span>깃허브 보러가기</span>
-          </a>
+      <p class="modal__desc__intro">{{  this.modalData.descintro }}</p>
+      <div class="btn__site">
           <a :href="modalData.url" target="_blank">
             <font-awesome-icon icon="fa-solid fa-check-to-slot" />
             <span>사이트 보러가기</span>
           </a>
+          <a :href="modalData.github" target="_blank" >
+            <font-awesome-icon icon="fa-brands fa-github" />
+            <span>깃허브 보러가기</span>
+          </a>
         </div>
-        <div class="img__wrap">
+      <div class="modal__inner">
+        
+        <div>
+          <p class="modal__desc__title">🎯 핵심 전략</p>
+          <ul class="modal__desc__list">
+            <li v-for="strategy in modalData.descstrategy" :key="strategy">
+              <span class="point">{{ strategy.title }}</span> : {{ strategy.description }}
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="modal__desc__title">✅ 역할 및 경험</p>
+          <ul class="modal__desc__list">
+            <li v-for="role in modalData.descrole" :key="role">
+              {{ role }}
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="modal__desc__title">🛠️ 구현기능</p>
+          <ul class="modal__desc__list">
+            <li v-for="feature in features" :key="feature">
+              {{ feature }}
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="modal__desc__title">✏️ 사용기술 및 언어</p>
+          <ul class="modal__desc__list">
+            <li>
+              <span class="title">Frontend</span>
+              <span v-for="stack in frontendStacks" :key="stack" class="label">{{ stack }}</span>
+            </li>
+            <li>
+              <span class="title">Tools</span>
+              <span v-for="tool in toolsStacks" :key="tool" class="label">{{ tool }}</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="modal__desc__title">💻 결과물</p>
+          <ul>
+            <li>
+              <img :src="modalData.detailimg" :alt="modalData.name">
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="img__wrap">
           <img :src="modalData.detailimg" :alt="modalData.name">
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
