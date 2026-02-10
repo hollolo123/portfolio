@@ -3,7 +3,7 @@ import proj_img02 from '@/assets/images/project/project_img2.jpg';
 import proj_img03 from '@/assets/images/project/project_img3.jpg';
 import proj_img04 from '@/assets/images/project/project_img4.jpg';
 import proj_img01_detail from '@/assets/images/project/project_img1_detail.jpg';
-import proj_img02_detail from '@/assets/images/project/project_img2_detail.jpg';
+import proj_img02_detail from '@/assets/images/project/project_img2_detail.png';
 import proj_img03_detail from '@/assets/images/project/project_img3_detail.jpg';
 import proj_img04_detail from '@/assets/images/project/project_img4_detail.jpg';
 
@@ -92,6 +92,7 @@ const projectData = [
     descrole : [
       "UI 디자인 기획 및 Vue.js 프레임워크를 이용한 프론트엔드 총괄",
       "디자인 단계에서 구상한 복잡한 레이아웃을 기술적 제약 없이 코드로 재현",
+      "라우터 기반 네비게이션 구현",
     ],
     descfeature : [
       "Vue.js 프레임워크를 사용하여 구현",

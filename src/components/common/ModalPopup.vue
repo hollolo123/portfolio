@@ -63,9 +63,6 @@
             </li>
           </ul>
         </div>
-        <!-- <div class="img__wrap">
-          <img :src="modalData.detailimg" :alt="modalData.name">
-        </div> -->
       </div>
     </div>
   </div>
