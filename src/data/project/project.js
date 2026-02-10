@@ -19,7 +19,7 @@ const projectData = [
     detailimg : proj_img01_detail,
     url : "https://surimpark.vercel.app/",
     github : "https://github.com/hollolo123/portfolio",
-    descintro : "프로젝트 작업을 직관적으로 보여주기 위한 개인 포트폴리오 입니다.\n 디자인적 심미성과 기술적 안정성의 균형을 증명하는 공간으로 직관적인 정보 구조를 중심으로 설계하였습니다.",
+    descintro : "프로젝트 작업을 직관적으로 보여주기 위한 개인 포트폴리오 입니다.\n 디자인적 심미성과 기술적 안정성의 균형을 증명하는 공간으로\n 직관적인 정보 구조를 중심으로 설계하였습니다.",
     descstrategy : [
       { title : "명확한 정의", description : "디자인과 구현의 유기적 연결이라는 명확한 정의와 목적을 가지고 프로젝트 기획 및 설계" },
       { title : "반응형 최적화", description : "모바일/데스크톱 환경 모두에서 사용성이 유지되도록 반응형 그리드 시스템을 적용" },
