@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   &.circle {
-    background: radial-gradient(circle at center, #979285 0%, #1c1c1f 35%);
+    background: radial-gradient(circle at center, #979285 0%, #1c1c1f 30%);
     // background: radial-gradient(circle at center, #ece5db 0%, #d4cdbf 15%, #a39d8f 25%, #4a4845 37%, #1c1c1f 40%);
     background-position: center center;
     animation: gradient 10s ease-in-out infinite;
