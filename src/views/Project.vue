@@ -148,7 +148,7 @@ export default {
   .proj__box {
     opacity: 0;
     transform: translateY(0px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    transition: opacity 0.1s ease-out, transform 0.1s ease-out;
     animation-fill-mode: forwards;
   }
   .proj__box.is-visible {
