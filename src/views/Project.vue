@@ -1,5 +1,5 @@
 <template>
-  <section id="project">
+  <section ref="projectSectionRef" id="project">
     <div class="contents">
       <div class="inner">
         <Title title="Project" />
@@ -26,8 +26,7 @@
               </li>
             </ul>
           </div>
-          <!-- 관찰 대상 요소에 ref 추가 -->
-          <div ref="projectWrapperRef" class="proj__box__wrapper">
+          <div class="proj__box__wrapper">
             <div 
               v-if="filterData.length > 0"
               v-for="(project, index) in filterData" 
@@ -102,44 +101,39 @@ export default {
   }, 
 
   setup() {
-    const projectWrapperRef = ref(null); // wrapper ele 참조할 ref
-    const isSectionVisible = ref(false);  //  섹션 진입 상태
+    const projectSectionRef = ref(null);
+    const isSectionVisible = ref(false);
 
     let observer = null;
 
     const handleIntersection = (entries) => {
       entries.forEach(entry => {
-        if(entry.isIntersecting) {
-          isSectionVisible.value = true;
-          if (observer) {
-            observer.unobserve(entry.target);
-          }
-        }
+        isSectionVisible.value = entry.isIntersecting;
       });
     };
 
     onMounted(() => {
+      const rootMargin = '0px';
       observer = new IntersectionObserver(handleIntersection, {
-        root : null,
-        rootMargin : '0px',
-        threshold : 0.2
+        root: null,
+        rootMargin,
+        threshold: 0.2
       });
-
-      if (projectWrapperRef.value) {
-        observer.observe(projectWrapperRef.value);
+      if (projectSectionRef.value) {
+        observer.observe(projectSectionRef.value);
       }
     });
 
     onUnmounted(() => {
-      if (observer && projectWrapperRef.value) {
-        observer.unobserve(projectWrapperRef.value);
+      if (observer && projectSectionRef.value) {
+        observer.unobserve(projectSectionRef.value);
       }
     });
 
     return {
-      projectWrapperRef,
+      projectSectionRef,
       isSectionVisible
-    }
+    };
   }
 }
 </script>

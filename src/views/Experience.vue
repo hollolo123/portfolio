@@ -155,7 +155,7 @@ export default {
         // options 설정
         root: null,        // 루트 요소 설정 (null: 뷰포트)
         rootMargin: '0px', // 루트 요소의 마진 설정
-        threshold: 0.3     // 섹션의 30%가 보일 때 트리거 (0.3: 30%)
+        threshold: 0.2    // 섹션의 30%가 보일 때 트리거 (0.3: 30%)
       });
 
       // 섹션 관찰 시작
