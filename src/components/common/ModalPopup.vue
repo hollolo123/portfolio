@@ -9,11 +9,11 @@
       <div class="btn__site">
         <a :href="modalData.url" target="_blank">
           <font-awesome-icon icon="fa-solid fa-check-to-slot" />
-          <span>사이트 보러가기</span>
+          <span>사이트 바로가기</span>
         </a>
         <a :href="modalData.github" target="_blank" >
           <font-awesome-icon icon="fa-brands fa-github" />
-          <span>깃허브 보러가기</span>
+          <span>깃허브 바로가기</span>
         </a>
       </div>
       <div class="modal__inner">
