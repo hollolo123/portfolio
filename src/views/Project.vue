@@ -122,7 +122,7 @@ export default {
       observer = new IntersectionObserver(handleIntersection, {
         root : null,
         rootMargin : '0px',
-        threshold : 0.3
+        threshold : 0.2
       });
 
       if (projectWrapperRef.value) {
@@ -147,7 +147,7 @@ export default {
 <style lang="scss" scoped>
   .proj__box {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(0px);
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
     animation-fill-mode: forwards;
   }

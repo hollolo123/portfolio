@@ -9,11 +9,11 @@
         <div class="commt__text">  
           <p>
             상상을 현실의 인터페이스로 연결하는<br/>
-            <strong>웹디자이너 겸 퍼블리셔 박수림</strong> 입니다.
+            <strong>Web Designer & Web Publisher 박수림</strong> 입니다.
           </p>
           <p>
-            <strong>디자인의 심미성과 웹 표준의 견고함</strong> 을 동시에 추구하며,<br/>
-            <strong>프론트엔드 역량</strong> 을 더해 더 넓은 기술적 지평을 넓혀가고 있습니다.
+            디자인의 심미성과 웹 표준의 견고함을 동시에 추구하며,<br/>
+            <strong>Frontend Developer</strong> 역량을 더해 더 넓은 기술적 지평을 넓혀가고 있습니다.
           </p>
           <p>
             <strong>준비된 감각과 탄탄한 실력</strong> 을 바탕으로, <br/>
