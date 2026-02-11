@@ -11,7 +11,7 @@ import proj_img04_detail from '@/assets/images/project/project_img4_detail.jpg';
 const projectData = [
   {
     id : 1,
-    name : "[ Project01 ] Portfolio Site Development",
+    name : "Portfolio Site Development",
     type : "personal",
     keyword : ["Vue.js", "SCSS", "Vite", "Vercel"],
     description : "포트폴리오 프로젝트 입니다.",
@@ -42,7 +42,7 @@ const projectData = [
   },
   {
     id : 2,
-    name : "[ Project02 ] 대전세잔직업전문학교 홈페이지 리뉴얼 (Team)",
+    name : "[ Team ] 대전세잔직업전문학교 홈페이지 리뉴얼",
     type : "team",
     keyword : ["HTML", "SCSS", "JavaScript", "JQuery", "Vercel"],
     thumbnail: proj_img02,
@@ -76,7 +76,7 @@ const projectData = [
   },
   {
     id : 3,
-    name : "[ Project03 ] Vue Compile 대전세잔직업전문학교",
+    name : "Vue Compile 대전세잔직업전문학교",
     type : "personal",
     keyword : ["Vue.js", "SCSS", "Vite", "Vercel"],
     thumbnail : proj_img03,
@@ -84,7 +84,7 @@ const projectData = [
     description : "리뉴얼 사이트를 Vue.js를 사용하여 만들었습니다.",
     url : "https://cezanne-vue.vercel.app/",
     github : "https://github.com/hollolo123/cezanne_vue",
-    descintro : "대전세잔직업전문학교 리뉴얼 사이트를 Vue.js 프레임워크를 사용하여\n 컴포넌트 기반 개발 역량과 동적 데이터 핸들링 능력을 향상시켰습니다.",
+    descintro : "Vue.js 프레임워크를 사용하여 컴포넌트 기반 개발 역량과\n 동적 데이터 핸들링 능력을 향상시켰습니다.",
     descstrategy : [
       { title : "컴포넌트 중심 설계", description : "UI 요소(카드, 내비게이션, 모달 등)를 독립된 컴포넌트로 구조화하여 재사용성과 유지보수 효율 극대화" },
       { title : "프로젝트 구조 단순화", description : "Vue.js 프레임워크의 모듈화 특성을 활용하여 프로젝트 구조를 단순화하고 유지보수 용이성 강화" },
@@ -107,7 +107,7 @@ const projectData = [
   },
   {
     id : 4,
-    name : "[ Project04 ] React 대전빵지도 (Team)",
+    name : "[ Team ] React 대전빵지도",
     type : "team",
     keyword : ["React", "SCSS", "Vite", "Vercel"],
     thumbnail : proj_img04,
@@ -116,8 +116,9 @@ const projectData = [
     url : "https://daejeon-bread-map.vercel.app/",
     github : "https://github.com/sk-y01/daejeon_bread_map",
     descintro :
-      "(진행중) 본 프로젝트는 GitHub Pages의 정적 환경에서 구동되어\n API 호출 속도에 제한이 있을 수 있습니다. \n 쾌적한 확인을 위해 로딩 완료까지 잠시만 기다려 주시면 감사하겠습니다.",
+      "(진행중) 대전 지역 빵집 데이터를 기반으로 빵집 탐색이 가능하도록 설계했습니다. ",
     descstrategy : [
+
       { title : "정보 시각화", description : "대전 지역 빵집 데이터를 기반으로 빵집 탐색이 가능하도록 설계" },
       { title : "사용자 편의성", description : "현재 위치 기반 검색 기능을 통해 사용자가 원하는 빵집 정보를 2-3번의 클릭으로 도달하도록 동선 최적화" },
       { title : "직관적 UI", description : "빵집 데이터 기반 마커 및 리스트 렌더링으로 사용자가 쉽게 빵집 정보를 확인할 수 있도록 설계" }, 
