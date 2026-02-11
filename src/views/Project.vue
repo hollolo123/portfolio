@@ -33,7 +33,7 @@
               v-for="(project, index) in filterData" 
               :key="project.id" 
               :class="['proj__box', {'is-visible' : isSectionVisible}]"
-              :style="{'animation-delay' : isSectionVisible ? index * 0.3 + 's' : '0s'}"
+              :style="{'transition-delay' : isSectionVisible ? index * 0.12 + 's' : '0s'}"
               >
               <div class="item" >
                 <a
@@ -147,9 +147,8 @@ export default {
 <style lang="scss" scoped>
   .proj__box {
     opacity: 0;
-    transform: translateY(0px);
-    transition: opacity 0.1s ease-out, transform 0.1s ease-out;
-    animation-fill-mode: forwards;
+    transform: translateY(20px);
+    transition: opacity 0.45s ease-out, transform 0.45s ease-out;
   }
   .proj__box.is-visible {
     opacity: 1;
