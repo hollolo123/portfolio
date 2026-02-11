@@ -59,7 +59,7 @@
           <p class="modal__desc__title">💻 결과물</p>
           <ul>
             <li>
-              <img :src="modalData.detailimg" :alt="modalData.name">
+              <a :href="modalData.detailimg" target="_blank"><img :src="modalData.detailimg" :alt="modalData.name"></a>
             </li>
           </ul>
         </div>
