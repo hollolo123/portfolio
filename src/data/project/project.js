@@ -19,9 +19,9 @@ const projectData = [
     detailimg : proj_img01_detail,
     url : "https://surimpark.vercel.app/",
     github : "https://github.com/hollolo123/portfolio",
-    descintro : "프로젝트 작업을 직관적으로 보여주기 위한 개인 포트폴리오 입니다.\n 디자인적 심미성과 기술적 안정성의 균형을 증명하는 공간으로\n 직관적인 정보 구조를 중심으로 설계하였습니다.",
+    descintro : "프로젝트 작업을 직관적으로 보여주기 위한\n 개인 포트폴리오 입니다.",
     descstrategy : [
-      { title : "명확한 정의", description : "디자인과 구현의 유기적 연결이라는 명확한 정의와 목적을 가지고 프로젝트 기획 및 설계" },
+      { title : "명확한 정의", description : "디자인적 심미성과 기술적 안정성의 균형을 증명하는 공간으로 직관적인 정보 구조를 중심으로 설계" },
       { title : "반응형 최적화", description : "모바일/데스크톱 환경 모두에서 사용성이 유지되도록 반응형 그리드 시스템을 적용" },
       { title : "인터랙션 최적화", description : "사용자 행동에 즉각 반응하는 호버 효과와 부드러운 스크롤 애니메이션을 통해 사용자 경험을 향상" },
     ],
@@ -50,7 +50,7 @@ const projectData = [
     description : "팀 프로젝트로 진행한 리뉴얼 사이트입니다.",
     url: "https://renewal-cezanne.vercel.app/",
     github : "https://github.com/JeongJae1203/renewal-cezanne",
-    descintro : "팀 프로젝트로 진행한 대전세잔직업전문학교 홈페이지 리뉴얼 사이트 입니다.\n 메인 레이아웃은 직관적인 정보 구조를 중심으로 설계하였고,\n 모바일/데스크톱 환경 모두에서 사용성이 유지되도록 반응형 그리드 시스템을 적용했습니다.",
+    descintro : "팀 프로젝트로 진행한 대전세잔직업전문학교 홈페이지\n 리뉴얼 사이트 입니다.",
     descstrategy : [
       { title : "정보 재설계", description : "교육 정보 우선순위 재정비로 정보 도달 동선 최적화" },
       { title : "UI 시인성", description : "강한 컬러 대비와 포인트 컬러를 활용해 클릭(CTA) 유도 및 레이아웃 명확화" },
@@ -84,7 +84,7 @@ const projectData = [
     description : "리뉴얼 사이트를 Vue.js를 사용하여 만들었습니다.",
     url : "https://cezanne-vue.vercel.app/",
     github : "https://github.com/hollolo123/cezanne_vue",
-    descintro : "팀 프로젝트로 진행한 대전세잔직업전문학교 리뉴얼 사이트를 Vue.js 프레임워크를 사용하여 컴포넌트 기반 개발 역량과 동적 데이터 핸들링 능력을 향상시켰습니다.",
+    descintro : "대전세잔직업전문학교 리뉴얼 사이트를 Vue.js 프레임워크를 사용하여\n 컴포넌트 기반 개발 역량과 동적 데이터 핸들링 능력을 향상시켰습니다.",
     descstrategy : [
       { title : "컴포넌트 중심 설계", description : "UI 요소(카드, 내비게이션, 모달 등)를 독립된 컴포넌트로 구조화하여 재사용성과 유지보수 효율 극대화" },
       { title : "프로젝트 구조 단순화", description : "Vue.js 프레임워크의 모듈화 특성을 활용하여 프로젝트 구조를 단순화하고 유지보수 용이성 강화" },
@@ -112,11 +112,11 @@ const projectData = [
     keyword : ["React", "SCSS", "Vite", "Vercel"],
     thumbnail : proj_img04,
     detailimg : proj_img04_detail,
-    description : "(진행중) 팀 프로젝트로 React를 활용해 제작한 탐색형 웹 서비스입니다.",
+    description : "(진행중)팀 프로젝트로 React를 활용해\n 제작한 탐색형 웹 서비스입니다.",
     url : "https://daejeon-bread-map.vercel.app/",
     github : "https://github.com/sk-y01/daejeon_bread_map",
     descintro :
-      "(진행중) 대전 지역 빵집 데이터를 기반으로 빵집 탐색이 가능하도록 설계했습니다. \n 본 프로젝트는 GitHub Pages의 정적 환경에서 구동되어 API 호출 속도에 제한이 있을 수 있습니다. \n 쾌적한 확인을 위해 로딩 완료까지 잠시만 기다려 주시면 감사하겠습니다.",
+      "(진행중) 본 프로젝트는 GitHub Pages의 정적 환경에서 구동되어\n API 호출 속도에 제한이 있을 수 있습니다. \n 쾌적한 확인을 위해 로딩 완료까지 잠시만 기다려 주시면 감사하겠습니다.",
     descstrategy : [
       { title : "정보 시각화", description : "대전 지역 빵집 데이터를 기반으로 빵집 탐색이 가능하도록 설계" },
       { title : "사용자 편의성", description : "현재 위치 기반 검색 기능을 통해 사용자가 원하는 빵집 정보를 2-3번의 클릭으로 도달하도록 동선 최적화" },

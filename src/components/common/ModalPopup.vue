@@ -7,15 +7,15 @@
       </button>
       <p class="modal__desc__intro">{{  this.modalData.descintro }}</p>
       <div class="btn__site">
-          <a :href="modalData.url" target="_blank">
-            <font-awesome-icon icon="fa-solid fa-check-to-slot" />
-            <span>사이트 보러가기</span>
-          </a>
-          <a :href="modalData.github" target="_blank" >
-            <font-awesome-icon icon="fa-brands fa-github" />
-            <span>깃허브 보러가기</span>
-          </a>
-        </div>
+        <a :href="modalData.url" target="_blank">
+          <font-awesome-icon icon="fa-solid fa-check-to-slot" />
+          <span>사이트 보러가기</span>
+        </a>
+        <a :href="modalData.github" target="_blank" >
+          <font-awesome-icon icon="fa-brands fa-github" />
+          <span>깃허브 보러가기</span>
+        </a>
+      </div>
       <div class="modal__inner">
         
         <div>
