@@ -117,8 +117,8 @@ const projectData = [
     github : "https://github.com/sk-y01/daejeon_bread_map",
     descintro :
       "(진행중) 대전 지역 빵집 데이터를 기반으로 빵집 탐색이 가능하도록 설계했습니다. ",
+    descref : "본 프로젝트는 GitHub Pages의 정적 환경에서 구동되어 API 호출 속도에 제한이 있을 수 있습니다. \n 쾌적한 확인을 위해 로딩 완료까지 잠시만 기다려 주시면 감사하겠습니다.",
     descstrategy : [
-
       { title : "정보 시각화", description : "대전 지역 빵집 데이터를 기반으로 빵집 탐색이 가능하도록 설계" },
       { title : "사용자 편의성", description : "현재 위치 기반 검색 기능을 통해 사용자가 원하는 빵집 정보를 2-3번의 클릭으로 도달하도록 동선 최적화" },
       { title : "직관적 UI", description : "빵집 데이터 기반 마커 및 리스트 렌더링으로 사용자가 쉽게 빵집 정보를 확인할 수 있도록 설계" }, 

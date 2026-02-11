@@ -268,7 +268,13 @@
         border-radius: 1rem;
       }
       
-
+      .modal__desc__ref {
+        font-size: 1.6rem;
+        color: #ccc;  
+        margin:0 0 2rem 2rem;
+        white-space : pre-line;
+        word-break: keep-all;
+      }
       // 2026-02-05
       div {
         width: 98%;

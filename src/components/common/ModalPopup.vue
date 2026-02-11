@@ -17,7 +17,7 @@
         </a>
       </div>
       <div class="modal__inner">
-        
+        <p class="modal__desc__ref">{{  this.modalData.descref }}</p>
         <div>
           <p class="modal__desc__title">🎯 핵심 전략</p>
           <ul class="modal__desc__list">
